@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <title>Diagnostics</title>
+    <style>
+        .round {
+            width: 70px;
+            height: 70px;
+            border-radius: 50px;
+        }
+        
+        .dpround {
+            width: 180px;
+            height: 180px;
+            border-radius: 90px;
+        }
+        
+        .circle {
+            width: fit-content;
+        }
+        
+        hr {
+            height: 3px;
+            background-color: #bdafae;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>biolege</h1>
+
+        <div class="row mt-5">
+            <div class="col-12 col-lg-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
+                    <a href="#" class="list-group-item list-group-item-action">Tests and lab</a>
+                    <a href="#" class="list-group-item list-group-item-action active">Employee</a>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-9">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Diagnostics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pharmaceutical</a>
+                    </li>
+                </ul>
+                <div class="row my-3">
+                    <div class="col-10 d-flex justify-content-around">
+                        <div class="text-center circle">
+                            <div class="round bg-dark"></div>
+                            <span>
+                                Information
+                            </span>
+                        </div>
+                        <div class="text-center circle">
+                            <div class="round bg-secondary"></div>
+                            <span>
+                                Activity
+                            </span>
+                        </div>
+                        <div class="text-center circle">
+                            <div class="round bg-secondary"></div>
+                            <span>
+                                Orders
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <h3>Personal Information</h3>
+                    <hr>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="number">Mobile Number</label>
+                                    <input type="text" class="form-control" id="number">
+                                    <a href="#">Edit</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 d-lg-flex justify-content-end">
+                                <div class="text-center circle">
+                                    <div class="dpround bg-secondary"></div>
+                                    <a href="#">Edit</a>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="id">ID Number</label>
+                                    <input type="text" class="form-control" id="id">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label for="dob">Date of birth</label>
+                                            <input type="text" class="form-control" id="dob">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="bg">Blood Group</label>
+                                            <input type="text" class="form-control" id="bg">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">Gender</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                              <option>Male</option>
+                                              <option>Female</option>
+                                              <option>Others</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="age">Age</label>
+                                            <input type="text" class="form-control" id="age">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mail">Email address <span class="text-secondary">(optional)</span></label>
+
+                                    <input type="email" class="form-control" id="mail">
+
+
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="pa">Present address</label>
+                                    <input type="text" class="form-control" id="pa">
+                                </div>
+                                <div class="form-group">
+                                    <label for="mn">Mother's Name</label>
+                                    <input type="text" class="form-control" id="mn">
+                                </div>
+                                <div class="form-group">
+                                    <label for="fn">Father's Name</label>
+                                    <input type="text" class="form-control" id="fn">
+                                </div>
+                                <div class="form-group">
+                                    <label for="hc">Home Contact</label>
+                                    <input type="text" class="form-control" id="hc">
+                                </div>
+                                <div class="form-group">
+                                    <label for="per">Permanent address</label>
+                                    <input type="text" class="form-control" id="per">
+                                </div>
+                                <div class="form-group">
+                                    <label for="eq">Educational Qualification</label>
+                                    <input type="text" class="form-control" id="eq">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pj">Previous Job</label>
+                                    <input type="text" class="form-control" id="pj">
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-warning float-right">Submit</button>
+                    </form>
+                    <h3 class="mt-5">Documents</h3>
+                    <hr>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label for="cer">Certificate</label>
+                                    <input type="text" class="form-control" id="cer">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label for="ac">Adhar Card</label>
+                                    <input type="text" class="form-control" id="ac">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label for="pc">PAN Card</label>
+                                    <input type="text" class="form-control" id="pc">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label for="vi">Voter ID</label>
+                                    <input type="text" class="form-control" id="vi">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label for="ln">License Number</label>
+                                    <input type="text" class="form-control" id="ln">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label for="sig">Signature</label>
+                                    <input type="text" class="form-control" id="sig">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label for="ed">Employment Document (Scanned copy)</label>
+                                    <input type="text" class="form-control" id="ed">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-warning px-3">Save</button>
+
+
+                    </form>
+                    <h3 class="mt-3">Bank details</h3>
+                    <hr>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="bn">Bank Name</label>
+                                    <input type="text" class="form-control" id="bn">
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 col-12"></div>
+
+
+                            <div class="col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="an">Account Name</label>
+                                    <input type="text" class="form-control" id="an">
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 col-12"></div>
+
+                            <div class="col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="in">IFSC Number</label>
+                                    <input type="text" class="form-control" id="in">
+                                </div>
+
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-warning px-3">Save</button>
+                    </form>
+                    <h3 class="mt-3">Social media accounts</h3>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex flex-column flex-md-row justify-content-around align-items-center">
+                        <div class="text-center circle">
+                            <div class="round bg-secondary"></div>
+                            <span>
+                                Facebook
+                            </span>
+                        </div>
+                        <div class="text-center circle">
+                            <div class="round bg-secondary"></div>
+                            <span>
+                                Twitter
+                            </span>
+                        </div>
+                        <div class="text-center circle">
+                            <div class="round bg-secondary"></div>
+                            <span>
+                                Snapchat
+                            </span>
+                        </div>
+                        <div class="text-center circle">
+                            <div class="round bg-secondary"></div>
+                            <span>
+                                Whatsapp
+                            </span>
+                        </div>
+                        <div class="text-center circle">
+                            <div class="round bg-secondary"></div>
+                            <span>
+                                Tik-tok
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

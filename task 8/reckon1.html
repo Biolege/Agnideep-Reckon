@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <style>
+        nav {
+            background-color: orange;
+            color: white;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav a:hover {
+            color: black;
+        }
+        
+        .navbar-toggler {
+            border: 1px solid rgb(230, 128, 12);
+        }
+        
+        .navbar-toggler-icon {
+            width: 100%;
+            color: rgb(253, 72, 0);
+        }
+        
+        .lb {
+            border-left: 1px solid white;
+        }
+        
+        .fa-user-md {
+            color: rgb(233, 43, 10);
+            background-color: white;
+            border-radius: 20px;
+            font-size: 3rem;
+        }
+        
+        .fa-dna {
+            font-size: 2rem;
+        }
+        
+        .icn {
+            font-size: 30px;
+            border: 2px solid black;
+            border-radius: 200px;
+            padding: 20px;
+            color: white;
+            background-color: black;
+        }
+        
+        .icn:hover {
+            background-color: orange;
+            border: none;
+        }
+        
+        .icon-set {
+            width: 50%;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        td {
+            padding: 30px 0;
+        }
+        
+        .middle {
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+        }
+        
+        .circle {
+            background-color: grey;
+            height: 3rem;
+            width: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+
+            <table>
+                <tr>
+                    <td class="pr-3"><i class="fas fa-user-md"></i></td>
+                    <td class="lb pl-3">
+                        Dr.Ramanathan Swami
+                        <small class="d-block">Good morning</small>
+                    </td>
+                </tr>
+            </table>
+
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""></span>
+         
+          <i class="fas fa-bars navbar-toggler-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="navbar-brand ml-auto" href="#">
+                <table>
+                    <tr>
+                        <td><i class="fas fa-dna mr-2"></i></td>
+                        <td>biolege
+                            <small class="d-lg-block">Doctor</small>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <small>
+                    <a href="#"> Sign out</a>
+                   
+                </small>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="d-flex justify-content-around my-5 flex-column flex-lg-row align-items-center border py-3">
+            <div class="icon-set d-flex justify-content-around">
+                <div class="text-center mx-2"><span class="d-block icn"><i class="fas fa-calendar-check"></i></span>Appointment</div>
+                <div class="text-center mx-2"><span class="d-block icn"><i class="fas fa-phone-alt"></i></span>Tele-medicine</div>
+                <div class="text-center mx-2"><span class="d-block icn"><i class="far fa-smile"></i></span>Patients</div>
+                <div class="text-center mx-2"><span class="d-block icn"><i class="fas fa-bell"></i></span>Notification</div>
+            </div>
+            <div class="icon-set d-flex justify-content-around">
+                <div class="text-center mx-2"><span class="d-block icn"><i class="fas fa-user-circle"></i></span>Profile</div>
+                <div class="text-center mx-2"><span class="d-block icn"><i class="far fa-building"></i></span>Clinic</div>
+                <div class="text-center mx-2"><span class="d-block icn"><i class="fas fa-cog"></i></span>Settings</div>
+
+            </div>
+        </div>
+        <div class="my-3">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <i class="far fa-calendar-alt"></i>
+                    <h5 class="d-inline mx-3">April 23,2020</h5>
+                </div>
+                <i class="fas fa-chevron-circle-down"></i>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col-12 col-lg-3 border my-2">
+                <h5>Total appointments</h5>
+                <h5 class="float-right">25</h5>
+            </div>
+            <div class="col-12 col-lg-3 border my-2">
+                <h5>Completed</h5>
+                <h5 class="float-right">19</h5>
+            </div>
+            <div class="col-12 col-lg-3 border my-2">
+                <h5>Pending</h5>
+                <h5 class="float-right">09</h5>
+            </div>
+        </div>
+        <div class="my-3">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h5>My clinic</h5>
+                    <h6>Now you are at Donna medicos clinic</h6>
+                </div>
+                <i class="fas fa-chevron-circle-down"></i>
+            </div>
+        </div>
+        <h4 class="my-5">Schedule</h4>
+        <table>
+            <tr class="border">
+                <th>Patient name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Status</th>
+                <th>Time slot</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex align-items-center">
+                        <div class="circle rounded-circle"></div>
+                        <span class="mx-2">Babur Ahmed</span>
+                    </div>
+
+                </td>
+                <td>Male</td>
+                <td>34</td>
+                <td>First Visit</td>
+                <td>11 am</td>
+            </tr>
+            <tr class="middle">
+                <td>
+                    <div class="d-flex align-items-center">
+                        <div class="circle rounded-circle"></div>
+                        <span class="mx-2">Babur Ahmed</span>
+                    </div>
+
+                </td>
+                <td>Male</td>
+                <td>34</td>
+                <td>First Visit</td>
+                <td>11 am</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex align-items-center">
+                        <div class="circle rounded-circle"></div>
+                        <span class="mx-2">Babur Ahmed</span>
+                    </div>
+
+                </td>
+                <td>Male</td>
+                <td>34</td>
+                <td>First Visit</td>
+                <td>11 am</td>
+            </tr>
+        </table>
+        <h4 class="my-5">Completed</h4>
+        <table>
+            <tr class="border">
+                <th>Patient name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Status</th>
+                <th>Time slot</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex align-items-center">
+                        <div class="circle rounded-circle"></div>
+                        <span class="mx-2">Babur Ahmed</span>
+                    </div>
+
+                </td>
+                <td>Male</td>
+                <td>34</td>
+                <td>First Visit</td>
+                <td>11 am</td>
+            </tr>
+            <tr class="middle">
+                <td>
+                    <div class="d-flex align-items-center">
+                        <div class="circle rounded-circle"></div>
+                        <span class="mx-2">Babur Ahmed</span>
+                    </div>
+
+                </td>
+                <td>Male</td>
+                <td>34</td>
+                <td>First Visit</td>
+                <td>11 am</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex align-items-center">
+                        <div class="circle rounded-circle"></div>
+                        <span class="mx-2">Babur Ahmed</span>
+                    </div>
+
+                </td>
+                <td>Male</td>
+                <td>34</td>
+                <td>First Visit</td>
+                <td>11 am</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+body,
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+#section1 {
+    border-right: 5px solid #B4D7FF;
+}
+
+.digit-group input {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    border-bottom: 1px solid #808080;
+    line-height: 50px;
+    font-family: 'Raleway', sans-serif;
+}

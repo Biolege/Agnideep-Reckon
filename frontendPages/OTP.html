@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="OTP.css">
+
+
+    <title>Hello, world!</title>
+</head>
+
+<body class="mx-0 my-0 font-weight-light d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12 text-center" id="section1">
+                <div class="mb-5 d-flex flex-column">
+                    <h1 class="text-primary font-weight-bold">Welcome to Biolege,</h1>
+                    <h4 class="text-info font-weight-bold">Your Health assistant</h4>
+                </div>
+                <div class="mb-5 d-flex flex-column">
+                    <h3 class="text-primary mb-3">OTP Verification</h3>
+                    <h6 class="text-secondary">OTP has been sent on your mobile. Please enter Below</h6>
+                </div>
+                <div class="mb-5">
+                    <form method="get" class="digit-group font-weight-light text-dark h4" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                        <input type="text" id="digit-1" name="digit-1" data-next="digit-2" class="text-center mx-2" />
+                        <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" class="text-center mx-2" />
+                        <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" class="text-center mx-2" />
+                        <span class="splitter px-2 text-secondary h4">&ndash;</span>
+                        <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" class="text-center mx-2" />
+                        <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" class="text-center mx-2" />
+                        <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" class="text-center mx-2" />
+                    </form>
+                </div>
+
+                <div class="my-3">
+                    <p>Didn't receive OTP?
+                        <a href="" class="d-block">Resent OTP</a>
+                        <button type="button" class="btn  btn-primary px-5 mt-3">Verify</button>
+                    </p>
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-6 col-12">
+                <img class="img-fluid mx-auto d-block" src="grid.png" alt="Chania" width="300" height="100">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('.digit-group').find('input').each(function() {
+            $(this).attr('maxlength', 1);
+            $(this).on('keyup', function(e) {
+                var parent = $($(this).parent());
+
+                if (e.keyCode === 8 || e.keyCode === 37) {
+                    var prev = parent.find('input#' + $(this).data('previous'));
+
+                    if (prev.length) {
+                        $(prev).select();
+                    }
+                } else if ((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+                    var next = parent.find('input#' + $(this).data('next'));
+
+                    if (next.length) {
+                        $(next).select();
+                    } else {
+                        if (parent.data('autosubmit')) {
+                            parent.submit();
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

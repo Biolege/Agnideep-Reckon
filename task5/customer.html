@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <style>
+        nav {
+            background-color: white;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        
+        nav a:hover {
+            color: black;
+        }
+        
+        .navbar-brand {
+            font-size: 2.5rem;
+        }
+        
+        .br {
+            border-right: 3px solid #cedbd2;
+        }
+        
+        .container {
+            border: 1px solid #cedbd2;
+            border-radius: 5px;
+            box-shadow: 5px 10px 18px #888888;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><i class="fas fa-dna"></i>biolege</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""></span>
+         
+          <i class="fas fa-bars navbar-toggler-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-lg-5 ml-auto">
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#"><i class="fas fa-check"></i> Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-chart-bar"></i> Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-comment-dots"></i> Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-user-plus"></i> Add Customer</a>
+                </li>
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                        <span class="d-block"><i class="fas fa-user-circle"></i><small class="ml-1">Welcome "Name"</small></span> My account
+
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><b>Hello "Name"</b></a>
+                        <a class="dropdown-item" href="#">My details</a>
+                        <a class="dropdown-item" href="#">My diagnostics</a>
+                        <a class="dropdown-item" href="#">My appointments</a>
+                        <a class="dropdown-item" href="#">My medicine</a>
+                        <a class="dropdown-item" href="#">Notification</a>
+                        <a class="dropdown-item" href="#">Payment method</a>
+                        <a class="dropdown-item" href="#">Membership</a>
+                        <a class="dropdown-item" href="#">My Family</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="#">Sign Out</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5 py-5 px-5">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h4>Add customer</h4>
+                <form action="">
+                    <div class="br pr-5 my-4">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="mn">Mobile Number</label>
+                            <input type="text" class="form-control" id="mn">
+                        </div>
+                        <div class="form-group">
+                            <label for="add">Address</label>
+                            <input type="text" class="form-control" id="add">
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="form-group">
+                                <label for="dob">Date of birth</label>
+                                <input type="text" class="form-control" id="dob">
+                            </div>
+                            <div class="form-group">
+                                <label for="gen">Gender</label>
+                                <input type="text" class="form-control" id="gen">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-12">
+                                <div class="form-group">
+                                    <label for="age">Age</label>
+                                    <input type="text" class="form-control" id="age">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <submit class="btn btn-warning">Done</submit>
+                </form>
+
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center mt-4 mt-lg-0">
+                <h5 class="mb-5">Search for existing items</h5>
+                <div class="form-group">
+                    <label for="emn">Enter mobile number</label>
+                    <input type="text" class="form-control" id="emn">
+                </div>
+                <button class="btn btn-warning">Proceed</button>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
