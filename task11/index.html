@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Nunito Sans';
+        }
+        
+        .icons {
+            background-color: #141B41;
+            color: #FFF;
+            border-radius: 50%;
+            border: none;
+            padding: 10px;
+        }
+        
+        .icons1 {
+            background-color: #FF8900;
+            color: #FFF;
+            border-radius: 50%;
+            border: none;
+            padding: 10px;
+        }
+        
+        .icons-text {
+            font-size: 14px;
+            color: #141B41;
+            margin-top: 5px;
+        }
+        
+        .icon-set {
+            width: 50%;
+        }
+        
+        .navi {
+            font-size: 30px;
+            margin-right: 5px;
+        }
+        
+        nav {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav a:hover {
+            color: black;
+        }
+        
+        .navbar-brand {
+            font-size: 2.5rem;
+        }
+        
+        .bordrup {
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        #head {
+            font-weight: 600;
+            font-size: 24px;
+        }
+        
+        .bb {
+            border-bottom: 1px solid black;
+        }
+        
+        .crcl {
+            width: 93px;
+            height: 93px;
+            background: #C4C4C4;
+        }
+        
+        .box {
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><i class="fas fa-dna"></i>biolege</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""></span>
+         
+          <i class="fas fa-bars navbar-toggler-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Diagnostics <span class="d-block"><small>Book tests</small></span><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Doctors<span class="d-block"><small>Book appointment</small></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pharmacy<span class="d-block"><small>Order medicine</small></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Media<span class="d-block"><small>Article</small></span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-lg-5">
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#"><span class="navi"><i class="far fa-check-square ikn"></i></span><small class="ml-1">Data security<span class="d-block">and others</span></small></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="navi"><i class="fas fa-building ikn"></i></span><small class="ml-1">For</small><span class="d-block">Business</span></a>
+                </li>
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                        <span class="d-block"><span class="navi"><i class="fas fa-user-circle ikn"></i></span><small class="ml-1">Welcome</small></span> My account
+
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><b>Hello "Name"</b></a>
+                        <a class="dropdown-item" href="#">My details</a>
+                        <a class="dropdown-item" href="#">My diagnostics</a>
+                        <a class="dropdown-item" href="#">My appointments</a>
+                        <a class="dropdown-item" href="#">My medicine</a>
+                        <a class="dropdown-item" href="#">Notification</a>
+                        <a class="dropdown-item" href="#">Payment method</a>
+                        <a class="dropdown-item" href="#">Membership</a>
+                        <a class="dropdown-item" href="#">My Family</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="#">Sign Out</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-sm-5 ">
+            <div class="col-sm-12 shad p-3 mb-5 bg-white bordrup">
+                <div class="row slider">
+                    <div class="col text-center">
+                        <a class="links-icons" href="#">
+                            <button class="icons">
+                                <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
+                            </button>
+                            <div class="icons-text">My details</div>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a class="links-icons" href="#">
+                            <button class="icons">
+                                <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="fingerprint" class="svg-inline--fa fa-fingerprint fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256.12 245.96c-13.25 0-24 10.74-24 24 1.14 72.25-8.14 141.9-27.7 211.55-2.73 9.72 2.15 30.49 23.12 30.49 10.48 0 20.11-6.92 23.09-17.52 13.53-47.91 31.04-125.41 29.48-224.52.01-13.25-10.73-24-23.99-24zm-.86-81.73C194 164.16 151.25 211.3 152.1 265.32c.75 47.94-3.75 95.91-13.37 142.55-2.69 12.98 5.67 25.69 18.64 28.36 13.05 2.67 25.67-5.66 28.36-18.64 10.34-50.09 15.17-101.58 14.37-153.02-.41-25.95 19.92-52.49 54.45-52.34 31.31.47 57.15 25.34 57.62 55.47.77 48.05-2.81 96.33-10.61 143.55-2.17 13.06 6.69 25.42 19.76 27.58 19.97 3.33 26.81-15.1 27.58-19.77 8.28-50.03 12.06-101.21 11.27-152.11-.88-55.8-47.94-101.88-104.91-102.72zm-110.69-19.78c-10.3-8.34-25.37-6.8-33.76 3.48-25.62 31.5-39.39 71.28-38.75 112 .59 37.58-2.47 75.27-9.11 112.05-2.34 13.05 6.31 25.53 19.36 27.89 20.11 3.5 27.07-14.81 27.89-19.36 7.19-39.84 10.5-80.66 9.86-121.33-.47-29.88 9.2-57.88 28-80.97 8.35-10.28 6.79-25.39-3.49-33.76zm109.47-62.33c-15.41-.41-30.87 1.44-45.78 4.97-12.89 3.06-20.87 15.98-17.83 28.89 3.06 12.89 16 20.83 28.89 17.83 11.05-2.61 22.47-3.77 34-3.69 75.43 1.13 137.73 61.5 138.88 134.58.59 37.88-1.28 76.11-5.58 113.63-1.5 13.17 7.95 25.08 21.11 26.58 16.72 1.95 25.51-11.88 26.58-21.11a929.06 929.06 0 0 0 5.89-119.85c-1.56-98.75-85.07-180.33-186.16-181.83zm252.07 121.45c-2.86-12.92-15.51-21.2-28.61-18.27-12.94 2.86-21.12 15.66-18.26 28.61 4.71 21.41 4.91 37.41 4.7 61.6-.11 13.27 10.55 24.09 23.8 24.2h.2c13.17 0 23.89-10.61 24-23.8.18-22.18.4-44.11-5.83-72.34zm-40.12-90.72C417.29 43.46 337.6 1.29 252.81.02 183.02-.82 118.47 24.91 70.46 72.94 24.09 119.37-.9 181.04.14 246.65l-.12 21.47c-.39 13.25 10.03 24.31 23.28 24.69.23.02.48.02.72.02 12.92 0 23.59-10.3 23.97-23.3l.16-23.64c-.83-52.5 19.16-101.86 56.28-139 38.76-38.8 91.34-59.67 147.68-58.86 69.45 1.03 134.73 35.56 174.62 92.39 7.61 10.86 22.56 13.45 33.42 5.86 10.84-7.62 13.46-22.59 5.84-33.43z"></path></svg>
+                            </button>
+                            <div class="icons-text">Diagnostics</div>
+                        </a>
+
+                    </div>
+                    <div class="col text-center">
+                        <a class="links-icons" href="#">
+                            <button class="icons1">
+                                <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="far" data-icon="calendar-check" class="svg-inline--fa fa-calendar-check fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"></path></svg>
+                            </button>
+                            <div class="icons-text">Appointment</div>
+                        </a>
+
+                    </div>
+                    <div class="col text-center">
+                        <a class="links-icons" href="#">
+                            <button class="icons">
+                               <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="briefcase-medical" class="svg-inline--fa fa-briefcase-medical fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 128h-80V80c0-26.5-21.5-48-48-48H176c-26.5 0-48 21.5-48 48v48H48c-26.5 0-48 21.5-48 48v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V176c0-26.5-21.5-48-48-48zM192 96h128v32H192V96zm160 248c0 4.4-3.6 8-8 8h-56v56c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8v-56h-56c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h56v-56c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v56h56c4.4 0 8 3.6 8 8v48z"></path></svg>
+                            </button>
+                            <div class="icons-text">Medicine</div>
+                        </a>
+
+                    </div>
+                    <div class="col text-center">
+                        <a class="links-icons" href="#">
+                            <button class="icons">
+                                <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="bell" class="svg-inline--fa fa-bell fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path></svg>
+                            </button>
+                            <div class="icons-text">Notifications</div>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a class="links-icons" href="#">
+                            <button class="icons">
+                                <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="money-check" class="svg-inline--fa fa-money-check fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M0 448c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V128H0v320zm448-208c0-8.84 7.16-16 16-16h96c8.84 0 16 7.16 16 16v32c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-32zm0 120c0-4.42 3.58-8 8-8h112c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H456c-4.42 0-8-3.58-8-8v-16zM64 264c0-4.42 3.58-8 8-8h304c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm0 96c0-4.42 3.58-8 8-8h176c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zM624 32H16C7.16 32 0 39.16 0 48v48h640V48c0-8.84-7.16-16-16-16z"></path></svg>
+                            </button>
+                            <div class="icons-text">Payment</div>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a class="links-icons" href="#">
+                            <button class="icons">
+                                <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="user-check" class="svg-inline--fa fa-user-check fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4zm323-128.4l-27.8-28.1c-4.6-4.7-12.1-4.7-16.8-.1l-104.8 104-45.5-45.8c-4.6-4.7-12.1-4.7-16.8-.1l-28.1 27.9c-4.7 4.6-4.7 12.1-.1 16.8l81.7 82.3c4.6 4.7 12.1 4.7 16.8.1l141.3-140.2c4.6-4.7 4.7-12.2.1-16.8z"></path></svg>
+                            </button>
+                            <div class="icons-text ">Membership</div>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a class="links-icons" href="#">
+                            <button class="icons">
+                                <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="user-friends" class="svg-inline--fa fa-user-friends fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"></path></svg>
+                            </button>
+                            <div class="icons-text ">My family</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3">
+            <div class="d-flex justify-content-between">
+                <h5>
+                    Appointments
+                </h5>
+                <div>
+                    <h5 class="d-inline mx-3">My family</h5>
+                    <i class="fas fa-chevron-circle-down"></i>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="d-flex">
+            <h6 class="bb">
+                In Clinic
+            </h6>
+            <h6 class="ml-4">
+                Tele-appointment
+            </h6>
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-12 my-3 px-3 py-3 box">
+                        <div class="d-flex justify-content-between flex-column flex-lg-row align-items-center align-items-lg-start">
+                            <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start">
+                                <div class="crcl rounded-circle mr-3">
+
+                                </div>
+                                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                                    <h6 class="mt-lg-0 mt-4">Dr.Radhaswami Iyer</h6>
+                                    <small class="text-secondary mb-2">Speciality</small>
+                                    <small class="text-secondary mb-4">12 years experience</small>
+                                    <small class="text-secondary">Address</small>
+                                    <span>Dona Medicos</span>
+                                    <span>Address Address Address Address </span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column align-items-lg-end">
+                                <small class="bb mb-3 mt-lg-0 mt-4">Order details</small>
+                                <small class="text-secondary">Appointment Date</small>
+                                <span>April 01, 2020</span>
+                                <small class="text-secondary mt-3">Appointment time</small>
+                                <span>07:00 pm</span>
+                            </div>
+                        </div>
+                        <hr class="clearfix w-100">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="d-inline">First visit</h6>
+                                <h6 class="ml-5 d-inline">View prescription</h6>
+                            </div>
+                            <div>
+                                <i class="fas fa-redo"></i>
+                                <h6 class="ml-2 d-inline">Visit Again</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 my-3 px-3 py-3 box">
+                        <div class="d-flex justify-content-between flex-column flex-lg-row align-items-center align-items-lg-start">
+                            <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start">
+                                <div class="crcl rounded-circle mr-3">
+
+                                </div>
+                                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                                    <h6 class="mt-lg-0 mt-4">Dr.Radhaswami Iyer</h6>
+                                    <small class="text-secondary mb-2">Speciality</small>
+                                    <small class="text-secondary mb-4">12 years experience</small>
+                                    <small class="text-secondary">Address</small>
+                                    <span>Dona Medicos</span>
+                                    <span>Address Address Address Address </span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column align-items-lg-end">
+                                <small class="bb mb-3 mt-lg-0 mt-4">Order details</small>
+                                <small class="text-secondary">Appointment Date</small>
+                                <span>April 01, 2020</span>
+                                <small class="text-secondary mt-3">Appointment time</small>
+                                <span>07:00 pm</span>
+                            </div>
+                        </div>
+                        <hr class="clearfix w-100">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="d-inline">First visit</h6>
+                                <h6 class="ml-5 d-inline">View prescription</h6>
+                            </div>
+                            <div>
+                                <i class="fas fa-redo"></i>
+                                <h6 class="ml-2 d-inline">Visit Again</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="row">
+                    <div class="col-12 my-3 px-3 py-3 box">
+                        <div class="d-flex justify-content-between">
+                            <h6>Your upcoming appointment</h6>
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </div>
+                        <div class="d-flex justify-content-between flex-column flex-lg-row align-items-center align-items-lg-start mt-3">
+                            <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start">
+                                <div class="crcl rounded-circle mr-3">
+
+                                </div>
+                                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                                    <h6 class="mt-lg-0 mt-4">Dr.Radhaswami Iyer</h6>
+                                    <small class="text-secondary mb-2">Speciality</small>
+                                    <small class="text-secondary mb-4">12 years experience</small>
+                                    <small class="text-secondary mt-4">Appointment Date</small>
+                                    <span>April 01, 2020</span>
+                                    <small class="text-secondary mt-4">Address</small>
+                                    <span>Dona Medicos</span>
+                                    <span>Address Address Address Address </span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <small class="mb-3 mt-lg-0 mt-4 mb-lg-5">Revisit</small>
+
+
+                                <small class="text-secondary mt-lg-5">Appointment time</small>
+                                <span>07:00 pm</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 my-3 px-3 py-3 box">
+                        <h5 class="mt-3 mb-4">
+                            Looking for right doctor of your problem ?
+                        </h5>
+                        <p class="mb-4">
+                            Biolege Doctors let you connect to the doctors from your city at instant.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6>Get an appointment</h6>
+                            <a href="#" class="btn btn-warning">Find Doctor</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
