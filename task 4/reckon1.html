@@ -11,7 +11,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+
     <style>
+        body {
+            font-family: 'Nunito Sans';
+        }
+        
         .icon-set {
             width: 50%;
         }
@@ -39,8 +45,13 @@
             font-size: 2.5rem;
         }
         
+        .box {
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
         td {
-            padding: 15px;
+            padding: 4px 15px;
             text-align: left;
         }
         
@@ -139,14 +150,14 @@
             </div>
         </div>
         <h3 class="my-5">Diagnostics</h3>
-        <div class="container border px-5 py-3">
+        <div class="container px-5 py-3 box">
             <div class="d-flex justify-content-between">
                 <h4>Order details</h4>
                 <h4 class="text-primary">Invoice</h4>
             </div>
             <div class="container my-4 border py-5 px-5">
-                <div class="row">
-                    <div class="col-12 col-lg-4 my-4">
+                <div class="d-flex justify-content-between flex-column flex-lg-row">
+                    <div class="my-4">
                         <div class="d-flex flex-column justify-content-between">
                             <div class="mb-3">
                                 <b>Order number</b>
@@ -170,60 +181,107 @@
 
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 my-4"><b>Order on</b><span class="d-block">12 April 2020</span></div>
-                    <div class="col-12 col-lg-4 my-4"><b>Ordered by</b><span class="d-block">Account name</span></div>
+                    <div class="my-4"><b>Order on</b><br><span>12 April 2020</span></div>
+                    <div class="my-4"><b>Ordered by</b><br><span>Account name</span></div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-lg-4 my-4">
+                    <div class="col-12 col-lg-4 my-4" id="#sample">
 
                         <b>Sample Collection</b>
-                        <table>
-
-
-
-                            <tr>
-                                <th>Name</th>
-                                <td>Patient Name</td>
-                            </tr>
-                            <tr>
-                                <th>Age</th>
-                                <td>43</td>
-                            </tr>
-                            <tr>
-                                <th>Gender</th>
-                                <td>Male</td>
-                            </tr>
-                            <tr>
-                                <th>Mobile</th>
-                                <td>9876543210</td>
-                            </tr>
-                            <tr>
-                                <th>Address</th>
-                                <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo commodi, corporis perspiciatis praesentium ab mollitia.</td>
-                            </tr>
-                            <tr>
-                                <th>Date</th>
-                                <td>13-04-2020</td>
-                            </tr>
-                            <tr>
-                                <th>Time</th>
-                                <td>10:30</td>
-                            </tr>
-                        </table>
-
+                        <div class="row d-flex justify-content-between my-2">
+                            <div class="col-6">
+                                <b>
+                                 Name
+                                </b>
+                            </div>
+                            <div class="col-6">
+                                Patient Name
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-between my-2">
+                            <div class="col-6">
+                                <b>
+                                    Age
+                                </b>
+                            </div>
+                            <div class="col-6">
+                                43
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-between my-2">
+                            <div class="col-6">
+                                <b>
+                                Gender
+                                </b>
+                            </div>
+                            <div class="col-6">
+                                Male
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-between my-2">
+                            <div class="col-6">
+                                <b>
+                                Mobile
+                                </b>
+                            </div>
+                            <div class="col-6">
+                                9876543210
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-between my-2">
+                            <div class="col-6">
+                                <b>
+                                    Address
+                                </b>
+                            </div>
+                            <div class="col-6">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, officiis!
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-between my-2">
+                            <div class="col-6">
+                                <b>
+                                    Date
+                                </b>
+                            </div>
+                            <div class="col-6">
+                                13-04-2020
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-between my-2">
+                            <div class="col-6">
+                                <b>
+                                Time
+                                </b>
+                            </div>
+                            <div class="col-6">
+                                10:30 am
+                            </div>
+                        </div>
 
                     </div>
                     <div class="col-12 col-lg-4 my-4"><b>Report Delivery</b>
-                        <table>
-                            <tr>
-                                <th>Date</th>
-                                <td>14-04-2020</td>
-                            </tr>
-                            <tr>
-                                <th>Time</th>
-                                <td>05:00 pm</td>
-                            </tr>
-                        </table>
+                        <div class="row my-2">
+                            <div class="col-5">
+                                <b>
+                                    Date
+                                </b>
+                            </div>
+                            <div class="col-5">
+                                14-04-2020
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-5">
+                                <b>
+                                    Time
+                                </b>
+                            </div>
+                            <div class="col-5">
+                                05:00 pm
+                            </div>
+                        </div>
+
                     </div>
                     <div class="col-12 col-lg-4 my-4"><b>Order Summary</b>
                         <table>
