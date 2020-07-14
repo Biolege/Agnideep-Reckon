@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My family details
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #141B41;
+        }
+        
+        #left-pane {
+            background-color: #FF8900;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .nav {
+            background-color: #141B41;
+        }
+        
+        .nav>li>a {
+            background-color: #141B41;
+            color: #fff;
+        }
+        
+        .lis {
+            list-style-type: none;
+            color: black;
+            font-size: 18px;
+        }
+        
+        .lis li:hover {
+            background-color: #141B41;
+            color: white;
+        }
+        
+        .crcl {
+            width: 41px;
+            height: 41px;
+            left: 338px;
+            top: 355px;
+            background: #C4C4C4;
+        }
+        
+        .box {
+            background: #FFFFFF;
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.05);
+            height: 63px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-sm-5">
+        <div class="row">
+            <div class="col-12 col-lg-2 mt-sm-5 py-sm-4 rounded mb-4" id="left-pane">
+                <ul class="lis">
+                    <li>Dashboard</li>
+                    <li>Customer</li>
+                    <li>Tests and Labs</li>
+                    <li>Employee</li>
+                    <li>Search</li>
+                </ul>
+            </div>
+            <div class="col-lg-10 col-12 rounded">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Diagnostics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Pharmaceuticals</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" style="background-color: white;">
+
+
+                        <div class="row">
+                            <div class="col-12 col-lg-2 mr-sm-auto ml-sm-4 mt-lg-5">
+                                <h3>Employee</h3>
+                            </div>
+                            <div class="col-12 col-lg-3 ml-sm-auto mt-lg-5 mr-sm-n4">
+                                <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                              </svg>
+                                <button type="button" class="btn btn-sm btn-link px-sm-4 rounded-pill" style="background-color: #FF8900; color: black;">+Add Users</button>
+                            </div>
+
+                        </div>
+                        <div class="container">
+                            <div class="row box align-items-center px-3 rounded mx-4">
+                                <div class="col-3">
+                                    Name
+                                </div>
+                                <div class="col-3">
+                                    Role
+                                </div>
+                                <div class="col-3">
+                                    Status
+                                </div>
+                                <div class="col-3">
+
+                                </div>
+                            </div>
+                            <div class="row mt-3 align-items-center">
+                                <div class="col-3 d-flex align-items-center">
+                                    <div class="rounded-circle crcl">
+
+                                    </div>
+                                    <div class="ml-2">
+                                        Babur Ahmed
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    Phlebotomist
+                                </div>
+                                <div class="col-3 text-success">
+                                    Active
+                                </div>
+                                <div class="col-3">
+                                    View
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row align-items-center">
+                                <div class="col-3 d-flex align-items-center">
+                                    <div class="rounded-circle crcl">
+
+                                    </div>
+                                    <div class="ml-2">
+                                        Babur Ahmed
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    Phlebotomist
+                                </div>
+                                <div class="col-3">
+
+                                </div>
+                                <div class="col-3">
+
+                                </div>
+                            </div>
+                            <hr>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
