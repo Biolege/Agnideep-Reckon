@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My family details
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #141B41;
+        }
+        
+        #left-pane {
+            background-color: #FF8900;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .nav {
+            background-color: #141B41;
+        }
+        
+        .nav>li>a {
+            background-color: #141B41;
+            color: #fff;
+        }
+        
+        .lis {
+            list-style-type: none;
+            color: black;
+            font-size: 18px;
+        }
+        
+        .lis li:hover {
+            background-color: #141B41;
+            color: white;
+        }
+        
+        .crcl {
+            width: 41px;
+            height: 41px;
+            left: 338px;
+            top: 355px;
+            background: #C4C4C4;
+        }
+        
+        .box {
+            background: #FFFFFF;
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.05);
+            height: 63px;
+        }
+        
+        .in1 {
+            border-radius: 100px 0 0 100px;
+            border-top: 2px solid rgba(0, 0, 0, 0.2);
+            border-left: 2px solid rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+            border-right: 1px solid white;
+            color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .box2 {
+            background: #FFFFFF;
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            height: 67px;
+        }
+        
+        .b {
+            border-radius: 0 100px 100px 0;
+            background: white;
+            color: navy;
+            border-top: 2px solid rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+            border-right: 2px solid rgba(0, 0, 0, 0.2);
+            border-left: 1px solid white;
+        }
+        
+        .details {
+            font-size: 0.8rem;
+        }
+        
+        @media only screen and (max-width: 992px) {
+            .box2 {
+                height: fit-content;
+                width: 100%;
+                background: #FAFAFA;
+                box-shadow: none;
+                text-align: center;
+            }
+            body {
+                background-color: white;
+            }
+            .details {
+                font-size: 1rem;
+            }
+            #data {
+                background: #FAFAFA;
+            }
+        }
+        
+        .heading {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">biolege</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">DIAGNOSTICS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">APPOINTMENT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PHARMACEUTICAL</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="d-lg-block d-none mt-3 mb-4 ml-3 heading">
+            <i class="fas fa-dna"></i> biolege
+        </h1>
+        <div class="row">
+            <div class="col-12 col-lg-2 mt-sm-5 py-sm-4 rounded mb-4 d-none d-lg-block" id="left-pane">
+                <ul class="lis">
+                    <li>Dashboard</li>
+                    <li>Customer</li>
+                    <li>Tests and Labs</li>
+                    <li>Employee</li>
+                    <li>Search</li>
+                </ul>
+            </div>
+            <div class="col-lg-10 col-12 rounded">
+                <ul class="nav nav-tabs d-none d-lg-flex" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Diagnostics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Pharmaceuticals</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active py-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" style="background-color: white;">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-lg-6 d-flex justify-content-around mt-4 order-last order-lg-first">
+                                <div class="text-center">
+                                    <div class="rounded-circle crcl d-none d-lg-block">
+                                    </div>
+                                    <h6>Home</h6>
+                                </div>
+                                <div class="text-center">
+                                    <div class="rounded-circle crcl d-none d-lg-block">
+
+                                    </div>
+                                    <h6>Orders</h6>
+                                </div>
+                                <div class="text-center">
+                                    <div class="rounded-circle crcl bg-dark d-none d-lg-block">
+
+                                    </div>
+                                    <h6>Reports</h6>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 mt-3 d-none d-lg-block">
+                                <div class="input-group">
+                                    <input type="text" class="in1 inp pl-3">
+                                    <div class="input-group-append ">
+                                        <button class="btn btn-secondary b" type="button "><i class="fas fa-search text-primary"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 order-first order-lg-last">
+                                <div class="d-flex justify-content-between d-lg-block mx-3">
+                                    <h4 class="d-lg-none">Dashboard</h4>
+                                    <h5 class="float-right my-lg-3 mx-lg-3">
+                                        Today, March 24
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </h5>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="row justify-content-around w-100 mt-5">
+                            <div class="col-3 box2">
+                                <h6 class="d-none d-lg-block">Report delivered</h6>
+                                <h6 class="d-lg-none">
+                                    RD :
+                                </h6>
+                            </div>
+                            <div class="col-3 box2">
+                                <h6 class="d-none d-lg-block">Report delivery pending</h6>
+                                <h6 class="d-lg-none">
+                                    RDP :
+                                </h6>
+                            </div>
+                            <div class="col-3 box2">
+                                <h6 class="d-none d-lg-block">Report uploaded</h6>
+                                <h6 class="d-lg-none">
+                                    RU :
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="w-100 text-center text-lg-left">
+                            <h5 class="ml-3 my-2">Details</h5>
+                        </div>
+
+                        <div class="details">
+                            <div class="row box align-items-center rounded mx-3 my-3 d-none d-lg-flex">
+                                <div class="col-2">
+                                    Name
+                                </div>
+                                <div class="col-2">
+                                    Test orders
+                                </div>
+                                <div class="col-2">
+                                    Laboratory
+                                </div>
+                                <div class="col-2">
+                                    Report from lab
+                                </div>
+                                <div class="col-2">
+                                    Report uploaded
+                                </div>
+                                <div class="col-2">
+                                    Report delivered
+                                </div>
+
+                            </div>
+                            <div class="row align-items-center mx-2 justify-content-between my-2" id="data">
+                                <div class="col-lg-2 col-6 d-flex align-items-center">
+                                    <div class="rounded-circle crcl d-none d-lg-flex">
+
+                                    </div>
+                                    <div class="ml-2">
+                                        Babur Ahmed
+                                    </div>
+                                </div>
+                                <div class="col-2 d-none d-lg-flex">
+                                    TSH, PPBS
+                                </div>
+                                <div class="col-2 d-none d-lg-flex">
+                                    HAMM
+                                </div>
+                                <div class="col-2 text-success d-none d-lg-flex">
+                                    Delivered
+                                </div>
+                                <div class="col-2 text-success d-none d-lg-flex">
+                                    Uploaded
+                                </div>
+                                <div class="col-2 text-success d-none d-lg-flex">
+                                    Delivered
+                                </div>
+                                <div class="d-lg-none col-3 text-success">
+                                    Collected
+                                </div>
+
+                            </div>
+                            <hr class="d-none d-lg-block">
+                            <div class="row align-items-center mx-2 justify-content-between my-2" id="data">
+                                <div class="col-lg-2 col-6 d-flex align-items-center">
+                                    <div class="rounded-circle crcl d-none d-lg-flex">
+
+                                    </div>
+                                    <div class="ml-2">
+                                        Babur Ahmed
+                                    </div>
+                                </div>
+                                <div class="col-2 d-none d-lg-flex">
+                                    Uric Acid
+                                </div>
+                                <div class="col-2 d-none d-lg-flex">
+                                    Thyrocare
+                                </div>
+                                <div class="col-2 text-danger d-none d-lg-flex">
+                                    not delivered
+                                </div>
+                                <div class="col-2 text-danger d-none d-lg-flex">
+                                    Pending
+                                </div>
+                                <div class="col-2 text-danger d-none d-lg-flex">
+                                    Pending
+                                </div>
+                                <div class="d-lg-none col-3 text-danger">
+                                    Pending
+                                </div>
+
+                            </div>
+                            <hr class="d-none d-lg-block">
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
