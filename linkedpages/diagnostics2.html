@@ -234,7 +234,7 @@
             </div>
         </div>
         <h5 class="my-3">Diagnostics</h5>
-        <div class="box1 px-3 py-2 my-3 d-flex justify-content-between align-items-center flex-column flex-lg-row">
+        <div class="box1 px-3 py-2 my-3 d-flex justify-content-between align-items-center flex-lg-row" id="sdiv">
             <h5>All parameters</h5>
             <div class="d-flex align-items-center search-div px-3 py-2">
                 <form action="#" method="GET">
@@ -542,9 +542,12 @@
             }]
         });
         let input = document.getElementById("search")
+        let sdiv = document.getElementById("sdiv")
         let inputBtn = document.getElementById("search-btn")
         inputBtn.addEventListener("click", () => {
             input.classList.remove("d-none")
+
+            sdiv.classList.add("flex-column")
         })
     </script>
 </body>
