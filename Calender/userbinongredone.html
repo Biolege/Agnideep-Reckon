@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--linking the required cdns and googlefonts-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>userbinongredone</title>
+    <style>
+        * {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .navbar-nav {
+            display: -webkit-inline-box;
+        }
+
+        .navbar {
+            background-color: blue;
+            padding-top: 33px;
+            padding-bottom: 0;
+        }
+
+        .items {
+            margin-left: 959px;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .icon1 {
+            width: 20px;
+            height: 20px;
+        }
+
+        .icon1esp {
+            width: 20px;
+            height: 20px;
+            margin-top: 11px;
+        }
+
+        .navbar-nav .nav-link {
+            padding-right: 29px;
+            color: white;
+        }
+
+        .welclass {
+            font-size: 10px;
+            margin-top: -4px;
+            margin-left: 5px;
+        }
+
+        .welclass1 {
+            margin-top: -47px;
+            margin-left: 5px;
+        }
+
+        .welclassf {
+            font-size: 10px;
+            margin-top: -32px;
+            margin-left: 26px;
+        }
+
+        .welclassf1 {
+            margin-top: -47px;
+            margin-left: 26px;
+            font-size: 10px;
+        }
+
+        .itemsleft .welclassf {
+            font-size: medium;
+        }
+
+        .itemsleft {
+            margin-bottom: -24px;
+        }
+
+        .itemsleft .welclassf {
+            padding-bottom: 5px;
+        }
+
+        .itemsleft .welclassf1 {
+            padding-bottom: 5px;
+            font-size: 13px;
+        }
+
+        .navhr {
+            border: 1px solid deepskyblue;
+            margin-top: -15px;
+        }
+
+        .pbform {
+            box-shadow: 7px 7px 7px 7px #f5eeee;
+            padding: 10px;
+            height: 79px;
+        }
+
+        .pb {
+            margin-top: 57px;
+            box-shadow: 7px 7px 7px 7px #f5eeee;
+        }
+
+        .pb ul {
+            text-align: center;
+        }
+
+        .pb ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .pb img {
+            width: 23px;
+            height: 25px;
+            border-radius: 50%;
+        }
+
+        .pb li {
+            list-style-type: none;
+            float: left;
+            width: 31.33%;
+        }
+
+        .pb ul li:before {
+            content: '';
+            background: #ccc;
+            height: 2px;
+            width: 380px;
+            display: block;
+            position: absolute;
+            left: 215px;
+            top: 12px;
+        }
+
+        .pb ul li:last-child:before {
+            content: none;
+        }
+
+        .pb li.active {
+            color: green;
+
+        }
+
+        .pb li.active img {
+            color: green;
+        }
+
+        h3 {
+            padding-left: 94px;
+            padding-top: 40px;
+            margin-bottom: 26px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+        }
+
+        .detailstests {
+            width: 846px;
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 53px;
+            margin-left: 55px;
+        }
+
+        .addp {
+            margin-top: 0px;
+            margin-left: 97px;
+            font-weight: bold;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .add {
+            display: flex;
+        }
+
+        .addpsec {
+            margin-top: 0px;
+            margin-left: 99px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        #aps2 {
+            margin-left: 88px;
+        }
+
+        #aps3 {
+            margin-left: 112px;
+        }
+
+        #aps4 {
+            margin-left: 82px;
+        }
+
+        .btns {
+            display: flex;
+        }
+
+        .deetbtn {
+            border-radius: 7px;
+            margin-left: 100px;
+            margin-top: 20px;
+            width: 150px;
+            margin-bottom: 40px;
+            color: deepskyblue;
+            background-color: white;
+            border: 1px solid;
+        }
+
+        .deetbtn:hover {
+            cursor: pointer;
+        }
+
+        #db2 {
+            margin-left: 30px;
+        }
+
+        .testclass {
+            float: right;
+            margin-right: 48px;
+            margin-top: -249px;
+        }
+
+        #i1 {
+            margin-left: 15px;
+        }
+
+        #i2 {
+            margin-left: -74px;
+        }
+
+        #i3 {
+            margin-left: -32px;
+        }
+
+        .tcs {
+            display: flex;
+        }
+
+        .tca {
+            margin-left: 82px;
+            margin-right: -71px;
+        }
+
+        .tci {
+            margin-left: 151px;
+            margin-right: -71px;
+        }
+
+        .addpnew {
+            margin-top: 0px;
+            margin-left: 190px;
+            font-weight: bold;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .rform {
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            float: right;
+            margin-top: -351px;
+            margin-right: 85px;
+            padding: 20px;
+            width: 330px;
+        }
+
+        h5 {
+            font-weight: normal;
+        }
+
+        .labp {
+            font-weight: normal;
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-top: -12px;
+        }
+
+        .dntp {
+            color: grey;
+            font-size: 12px;
+            width: 50%;
+            margin-bottom: 0;
+        }
+
+        .dntp2 {
+            width: 50%;
+        }
+
+        .rightdiv p {
+            margin-bottom: 0;
+        }
+
+        .rightdiv h5 {
+            padding-bottom: 20px;
+        }
+
+        .formhrnew {
+            margin: 0;
+            border: 1px solid lightgray;
+        }
+
+        .rdpn {
+            margin-left: auto;
+        }
+
+        .rdp {
+            margin-right: 31px;
+        }
+
+        .rdbtn {
+            border-radius: 8px;
+            background-color: orange;
+            color: white;
+            float: right;
+            margin-top: 115px;
+            margin-right: -332px;
+            border: none;
+            width: 328px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+        }
+
+        .dnt1 {
+            display: flex;
+        }
+
+        .dnt2 {
+            display: flex;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .pb ul li:before {
+                width: 211px;
+                left: 112px;
+            }
+
+            .addpsec {
+                margin-right: 455px;
+            }
+
+            .testclass {
+                margin-right: 227px;
+                margin-top: -452px;
+            }
+
+            .rform {
+                margin-top: -210px;
+            }
+        }
+
+        .patientaddress {
+            width: 846px;
+            position: absolute;
+            height: 799px;
+            left: 54px;
+            top: 700px;
+            background: #FFFFFF;
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        #t1 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        .pa-p1 {
+            position: absolute;
+            width: 194px;
+            height: 25px;
+            left: 42px;
+            top: 43px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .address {
+            position: absolute;
+            width: 314px;
+            height: 132px;
+            left: 38px;
+            top: 89px;
+            background: #FFFFFF;
+            border: 2px solid #EAEAEA;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        .pa-p2 {
+            position: absolute;
+            width: 159px;
+            height: 76px;
+            left: 22px;
+            top: 16px;
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+        }
+
+        .pa-p3 {
+            position: absolute;
+            width: 144px;
+            height: 19px;
+            left: 23px;
+            top: 102px;
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+        }
+
+        .changedit {
+            display: flex;
+            margin-top: 225px;
+            margin-left: 240px;
+        }
+
+        .changedit a {
+            margin-right: 39px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .pa-p4 {
+            position: relative;
+            width: 194px;
+            height: 25px;
+            left: 42px;
+            top: 43px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .new {
+            list-style-type: none;
+            padding: 0;
+            background-color: white;
+            padding-top: 20px;
+            margin-top: 50px;
+            margin-left: 43px;
+        }
+
+        .new a {
+            color: #000000;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .new a:hover {
+            cursor: pointer;
+            color: orange;
+            transition: .2s
+        }
+
+        .new hr {
+            margin-top: 1px;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: 2px solid rgba(0, 0, 0, .1);
+            margin-right: 469px;
+        }
+
+        .new li {
+            display: inline;
+            background-color: white;
+            padding-right: 50px;
+        }
+
+        .new li a.activenew {
+            border-bottom: 5px solid black;
+        }
+
+        .activenew {
+            border-bottom: 5px solid black;
+        }
+
+        .new.activenew {
+            padding: 0;
+        }
+
+        .tod {
+            font-size: 16px;
+            color: grey;
+            margin-top: -25px;
+            margin-left: 21px;
+        }
+
+        .btnclass button {
+            background-color: white;
+            border: 2px solid #009F23;
+            box-sizing: border-box;
+            border-radius: 2px;
+            margin-left: 19px;
+            color: black;
+            width: 77px;
+            height: 33px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        .btnclass {
+            margin-top: 48px;
+            margin-left: 23px;
+        }
+
+        .todcls {
+            margin-bottom: 55px;
+        }
+
+        #unavailableslot {
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+
+        .greenandred {
+            display: flex;
+            margin-left: 44px;
+            margin-top: 91px;
+        }
+
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: green;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .dotp {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            margin-left: 10px;
+            margin-right: 231px;
+        }
+
+        .dotp2 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            margin-left: 10px;
+        }
+
+        .dot2 {
+            height: 25px;
+            width: 25px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body onload="renderDate()">
+    <div class="container-fluid">
+        <nav class="navbar navbar-custom">
+            <div class="items">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <img src="search.png" alt="icon" class="icon1esp">
+                        <a class="nav-link">
+                            <p class="welclassf"> Data Security</p><br />
+                            <p class="welclassf1">and others</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+
+                        <img src="search.png" alt="icon" class="icon1esp">
+                        <a class="nav-link">
+                            <p class="welclassf"> For</p><br />
+                            <p class="welclassf1">Business</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active" style="display: contents;">
+
+
+                        <img src="search.png" alt="icon" class="icon1esp">
+                        <a class="nav-link">
+                            <p class="welclass"> Welcome "Name"</p><br />
+                            <p class="welclass1">My Account</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="itemsleft">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <p class="welclassf">Diagnostics</p><br />
+                            <p class="welclassf1">Book tests</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <p class="welclassf">Doctors</p><br />
+                            <p class="welclassf1">Book appointments</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <p class="welclassf">Pharmacy</p><br />
+                            <p class="welclassf1">Order medicine</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <p class="welclassf">Media</p><br />
+                            <p class="welclassf1">Article</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <hr class="navhr">
+
+    <div class="pb">
+        <form action="#" class="pbform">
+            <ul>
+                <li class="active">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                    </svg>
+                    <p>Select tests and labs</p>
+                </li>
+                <li>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                    </svg>
+                    <p>Patient Details</p>
+                </li>
+                <li>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                    </svg>
+                    <p>Payments</p>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <form class="detailstests">
+        <h3>Patient Details</h3>
+        <div class="details">
+            <span class="add">
+                <p class="addp">Name</p>
+                <p class="addpsec" id="aps1">Agnideep Sengupta</p>
+            </span>
+            <span class="add">
+                <p class="addp">Gender</p>
+                <p class="addpsec" id="aps2">Male</p>
+            </span>
+            <span class="add">
+                <p class="addp">Age</p>
+                <p class="addpsec" id="aps3">21</p>
+            </span>
+            <span class="add">
+                <p class="addp">Contact</p>
+                <p class="addpsec" id="aps4">1234567890</p>
+            </span>
+            <div class="btns">
+                <button class="deetbtn">Change Patient</button>
+                <button class="deetbtn" id="db2">Add Patient</button>
+            </div>
+        </div>
+        <div class="testclass">
+            <span class="tcs">
+                <p class="addpnew">Tests Selected</p>
+                <a href="#" class="tca">Add</a>
+            </span>
+            <span class="tcs">
+                <p class="addpnew" id="t1">Hb1Ac</p>
+                <a class="tci"><i class="far fa-times-circle" id="i1"></i></a>
+            </span>
+            <span class="tcs">
+                <p class="addpnew" id="t1">Random Blood Sugar</p>
+                <a class="tci"><i class="far fa-times-circle" id="i2"></i></a>
+            </span>
+            <span class="tcs">
+                <p class="addpnew" id="t1">Thyroid Profile</p>
+                <a class="tci"><i class="far fa-times-circle" id="i3"></i></a>
+            </span>
+        </div>
+    </form>
+    <div class="patientaddress">
+        <p class="pa-p1">Sample Pickup Address</p>
+        <div class="address">
+            <p class="pa-p2">
+                Agnideep Sengupta Kedia Puram, VIP Colony Hojai, Assam - 782435 India
+            </p>
+            <p class="pa-p3">
+                Contact : 8876967257
+            </p>
+        </div>
+        <div class="changedit">
+            <a href="#" id="a1">Change</a>
+            <a href="#" id="a2">Edit</a>
+        </div>
+        <p class="pa-p4">Sample Pickup Date</p>
+        <p class="pa-p4">Sample Pickup Time</p>
+        <ul class="new">
+            <li><a href="#" class="activenew">Morning</a></li> &nbsp;&nbsp;
+            <li><a href="#">Noon</a></li> &nbsp;&nbsp;
+            <li><a href="#">Evening</a></li>&nbsp;&nbsp;
+            <hr>
+        </ul>
+        <div class="todcls">
+            <div class="btnclass">
+                <button>11:00 am</button>
+                <button id="unavailableslot">11:00 am</button>
+                <button>11:00 am</button>
+                <button>11:00 am</button>
+                <button>11:00 am</button>
+                <button>11:00 am</button>
+                <button>11:00 am</button>
+                <button>11:00 am</button>
+            </div>
+        </div>
+        <div class="greenandred">
+            <span class="dot"></span>
+            <p class="dotp">Slot Available</p>
+            <span class="dot2"></span>
+            <p class="dotp2">Slot Booked</p>
+        </div>
+    </div>
+    <form action="#" class="rform">
+        <h5>Laboratory</h5>
+        <p class="labp">Laboratory Name</p>
+        <h5>Sample Collection</h5>
+        <div class="dnt1">
+            <p class="dntp">Date</p>
+            <p class="dntp">Time</p>
+
+        </div>
+        <div class="dnt">
+            <div class="dnt2">
+                <p class="dntp2">April 03, 2020</p>
+                <p class="dntp2">08:30AM</p>
+            </div>
+            <div class="rightdiv">
+                <h5>Billing Options</h5>
+                <span class="add">
+                    <p class="rdp">Lipid Profile</p>
+                    <p class="rdpn">350</p>
+                </span>
+                <hr class="formhrnew">
+                <span class="add">
+                    <p class="rdp">Thyroid Profile</p>
+                    <p class="rdpn">450</p>
+                </span>
+                <span class="add">
+                    <p class="rdp">Hb1Ac</p>
+                    <p class="rdpn">400</p>
+                </span>
+                <span class="add">
+                    <p class="rdp">Package</p>
+                    <p class="rdpn">1120</p>
+                </span>
+                <hr class="formhrnew">
+                <span class="add">
+                    <p class="rdp">Total Price</p>
+                    <p class="rdpn">2320</p>
+                </span>
+                <span class="add">
+                    <p class="rdp">Delivery Charge</p>
+                    <p class="rdpn">20</p>
+                </span>
+                <span class="add">
+                    <p class="rdp">Membership Discount</p>
+                    <p class="rdpn">-50</p>
+                </span>
+                <hr class="formhrnew">
+                <span class="add">
+                    <p class="rdp">Total amount</p>
+                    <p class="rdpn">2290</p>
+                </span>
+            </div>
+        </div>
+    </form>
+    <button class="rdbtn">Done</button>
+</body>
+
+</html>
