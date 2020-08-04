@@ -67,12 +67,26 @@
             }
         }
 
+        @media only screen and (max-width: 375px) {
+            .paymentBox {
+                font-size: 13px;
+            }
+        }
+
         #bg {
             background: #F7F7F7;
         }
 
         .custom {
             color: white;
+        }
+
+        .card {
+            width: fit-content;
+        }
+
+        .dateForm {
+            font-size: 10px;
         }
     </style>
 </head>
@@ -114,13 +128,13 @@
                             </p>
                             <div class="row d-none d-lg-block mb-5">
                                 <div class="col-12">
-                                    <div class="container col-12 col-sm-12">
+                                    <div class="container col-12">
                                         <div class="card border border-dark">
-                                            <h3 class="card-header bg-dark text-light text-center" id="monthAndYear">
-                                            </h3>
+                                            <h5 class="card-header bg-dark text-light text-center" id="monthAndYear">
+                                            </h5>
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <table class="table table-bordered" id="calendar">
+                                                    <table class="table-bordered" id="calendar">
                                                         <thead>
                                                             <tr>
                                                                 <th>Sun</th>
@@ -150,9 +164,10 @@
                                                     onclick="next()">Next</button>
                                             </div>
                                             <br />
-                                            <form class="form-inline">
-                                                <label class="lead mr-2 ml-2" for="month">Jump To: </label>
-                                                <select class="form-control col-4" name="month" id="month"
+                                            <form class="form-inline d-flex justify-content-around">
+                                                <label class="dateForm" for="month">Jump To: </label>
+
+                                                <select class="form-control col-4 dateForm" name="month" id="month"
                                                     onchange="jump()">
                                                     <option value=0>Jan</option>
                                                     <option value=1>Feb</option>
@@ -169,8 +184,8 @@
                                                 </select>
 
 
-                                                <label for="year"></label><select class="form-control col-4" name="year"
-                                                    id="year" onchange="jump()">
+                                                <label for="year"></label><select class="form-control col-4 dateForm"
+                                                    name="year" id="year" onchange="jump()">
                                                     <option value=1990>1990</option>
                                                     <option value=1991>1991</option>
                                                     <option value=1992>1992</option>
@@ -248,14 +263,14 @@
                                         aria-labelledby="pills-home-tab">
                                         <div class="todcls">
                                             <div class="btnclass">
-                                                <button>08:00 am</button>
-                                                <button id="unavailableslot">08:00 am</button>
-                                                <button>08:00 am</button>
-                                                <button>08:00 am</button>
-                                                <button>08:00 am</button>
-                                                <button>08:00 am</button>
-                                                <button>08:00 am</button>
-                                                <button>08:00 am</button>
+                                                <button class="my-1 mx-1">08:00 am</button>
+                                                <button class="my-1 mx-1" id="unavailableslot">08:00 am</button>
+                                                <button class="my-1 mx-1">08:00 am</button>
+                                                <button class="my-1 mx-1">08:00 am</button>
+                                                <button class="my-1 mx-1">08:00 am</button>
+                                                <button class="my-1 mx-1">08:00 am</button>
+                                                <button class="my-1 mx-1">08:00 am</button>
+                                                <button class="my-1 mx-1">08:00 am</button>
                                             </div>
                                         </div>
                                     </div>
@@ -263,14 +278,14 @@
                                         aria-labelledby="pills-profile-tab">
                                         <div class="todcls">
                                             <div class="btnclass">
-                                                <button>12:00 pm</button>
-                                                <button id="unavailableslot">12:00 pm</button>
-                                                <button>12:00 pm</button>
-                                                <button>12:00 pm</button>
-                                                <button>12:00 pm</button>
-                                                <button>12:00 pm</button>
-                                                <button>12:00 pm</button>
-                                                <button>12:00 pm</button>
+                                                <button class="my-1 mx-1">12:00 pm</button>
+                                                <button class="my-1 mx-1" id="unavailableslot">12:00 pm</button>
+                                                <button class="my-1 mx-1">12:00 pm</button>
+                                                <button class="my-1 mx-1">12:00 pm</button>
+                                                <button class="my-1 mx-1">12:00 pm</button>
+                                                <button class="my-1 mx-1">12:00 pm</button>
+                                                <button class="my-1 mx-1">12:00 pm</button>
+                                                <button class="my-1 mx-1">12:00 pm</button>
                                             </div>
                                         </div>
                                     </div>
@@ -278,14 +293,14 @@
                                         aria-labelledby="pills-contact-tab">
                                         <div class="todcls">
                                             <div class="btnclass">
-                                                <button>04:00 pm</button>
-                                                <button id="unavailableslot">04:00 pm</button>
-                                                <button>04:00 pm</button>
-                                                <button>04:00 pm</button>
-                                                <button>04:00 pm</button>
-                                                <button>04:00 pm</button>
-                                                <button>04:00 pm</button>
-                                                <button>04:00 pm</button>
+                                                <button class="my-1 mx-1">04:00 pm</button>
+                                                <button class="my-1 mx-1" id="unavailableslot">04:00 pm</button>
+                                                <button class="my-1 mx-1">04:00 pm</button>
+                                                <button class="my-1 mx-1">04:00 pm</button>
+                                                <button class="my-1 mx-1">04:00 pm</button>
+                                                <button class="my-1 mx-1">04:00 pm</button>
+                                                <button class="my-1 mx-1">04:00 pm</button>
+                                                <button class="my-1 mx-1">04:00 pm</button>
                                             </div>
                                         </div>
                                     </div>
@@ -365,7 +380,8 @@
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, blanditiis?
                                 </small>
                             </div>
-                            <div class="col-12 box d-flex justify-content-between mb-2 px-2 py-3">
+                            <div
+                                class="col-12 box d-flex justify-content-between mb-2 px-2 py-3 paymentBox align-items-center">
                                 <div>
                                     <div>
                                         Payment method
