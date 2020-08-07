@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        .box {
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .nav-pills {
+            border-bottom: 1px solid #C4C4C4;
+            width: fit-content;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: black;
+            background-color: white;
+            border-bottom: 4px solid black;
+            border-radius: 0;
+        }
+
+        .time {
+            color: black;
+            font-weight: 800;
+        }
+
+        .btnclass button {
+            background-color: white;
+            border: 2px solid lightgrey;
+            box-sizing: border-box;
+            border-radius: 2px;
+            color: black;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        #length {
+            height: fit-content;
+        }
+
+        @media only screen and (max-width: 960px) {
+            #bor {
+                border: none !important;
+
+            }
+
+            #blu {
+                color: white;
+                background: #0076FF;
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+            .paymentBox {
+                font-size: 13px;
+            }
+        }
+
+        #bg {
+            background: #F7F7F7;
+        }
+
+        .custom {
+            color: white;
+        }
+
+        .card {
+            width: fit-content;
+        }
+
+        .dateForm {
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-12 col-lg-7 py-3 px-lg-3 mb-3">
+                <div class="row">
+                    <div class="col-12 box d-none d-lg-block pb-4">
+                        <h5 class="my-3">Patient details</h5>
+                        <div class="d-flex justify-content-between">
+                            <table>
+                                <tr>
+                                    <td class="px-3">Name</td>
+                                    <td class="px-3">Agnideep Sengupta</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-3">Gender</td>
+                                    <td class="px-3">Male</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-3">Age</td>
+                                    <td class="px-3">21</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-3">Contact</td>
+                                    <td class="px-3">######7257</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-3"><button type="button" class="btn btn-outline-primary btn-sm"
+                                            data-toggle="modal" data-target="#exampleModal">Change
+                                            Patient</button>
+                                    </td>
+                                    <td class="px-3"><button type="button" class="btn btn-outline-primary btn-sm"
+                                            data-toggle="modal" data-target="#exampleModal1">Add
+                                            Patient</button>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <th class="px-3">Test selected</th>
+                                    <td class="px-3 text-primary">Add</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-3">Hb1Ac</td>
+                                    <td class="px-3 text-primary">x</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-3">Random Blood Sugar</td>
+                                    <td class="px-3 text-primary">x</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-3">Thyroid profile</td>
+                                    <td class="px-3 text-primary">x</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Change Patient</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                id="exampleRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                John Doe
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                id="exampleRadios2" value="option2">
+                                            <label class="form-check-label" for="exampleRadios2">
+                                                John Doe
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                id="exampleRadios3" value="option3">
+                                            <label class="form-check-label" for="exampleRadios3">
+                                                John Doe
+                                            </label>
+                                        </div>
+
+                                </div>
+                                <div class="modal-footer">
+
+                                    <submit type="button" class="btn btn-primary">Save changes</submit>
+                                    </form>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end -->
+                    <!-- Modal 1 -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Add patient</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="form-group">
+                                                <label for="cn">Name</label>
+                                                <input type="text" class="form-control" id="cn">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="rn">Mobile no.</label>
+                                                <input type="text" class="form-control" id="rn">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="form-group">
+                                                <label for="cn">Address</label>
+                                                <input type="text" class="form-control" id="cn">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="rn">Date of birth</label>
+                                                <input type="date" class="form-control" id="rn">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlSelect1">Gender</label>
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option>Male</option>
+                                                    <option>Female</option>
+                                                    <option>Other</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                </div>
+                                <div class="modal-footer">
+
+                                    <submit type="button" class="btn btn-primary">Add</submit>
+                                    </form>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal 1 end -->
+                    <div class="col-12 my-3 box">
+                        <div class="col-12 col-lg-7 mb-lg-5" id="blu">
+                            <p class="my-2 font-weight-bold">Sample pickup address</p>
+                            <div class="d-flex d-lg-block justify-content-between">
+                                <i class="far fa-check-circle d-lg-none"></i>
+                                <div class="px-3 py-lg-3 border rounded" id="bor">
+                                    <p>Agnideep Sengupta</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, laboriosam?
+                                    </p>
+                                    <p class="mt-3">Contact : 8876967257</p>
+                                </div>
+                                <i class="fas fa-ellipsis-h d-lg-none"></i>
+                                <p class="float-right d-none d-lg-block"><a href="" class="mx-2">Change</a><a
+                                        href="">Edit</a></p>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <p class="my-2 font-weight-bold mb-lg-3">Sample pickup date</p>
+                            <p class="my-2 d-lg-none">
+                                <i class="fas fa-calendar-week"></i>
+                                <span>Tomorrow,08 April 2020</span>
+                                <a href="" class="ml-2">Change</a>
+                            </p>
+                            <div class="row d-none d-lg-block mb-5">
+                                <div class="col-12">
+                                    <div class="container col-12">
+                                        <div class="card border border-dark">
+                                            <h5 class="card-header bg-dark text-light text-center" id="monthAndYear">
+                                            </h5>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <table class="table-bordered" id="calendar">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Sun</th>
+                                                                <th>Mon</th>
+                                                                <th>Tue</th>
+                                                                <th>Wed</th>
+                                                                <th>Thu</th>
+                                                                <th>Fri</th>
+                                                                <th>Sat</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <tbody id="calendar-body">
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-inline">
+
+                                                <button class="btn btn-outline-primary col-6" id="previous"
+                                                    onclick="previous()">Previous</button>
+
+                                                <button class="btn btn-outline-primary col-6" id="next"
+                                                    onclick="next()">Next</button>
+                                            </div>
+                                            <br />
+                                            <form class="form-inline d-flex justify-content-around">
+                                                <label class="dateForm" for="month">Jump To: </label>
+
+                                                <select class="form-control col-4 dateForm" name="month" id="month"
+                                                    onchange="jump()">
+                                                    <option value=0>Jan</option>
+                                                    <option value=1>Feb</option>
+                                                    <option value=2>Mar</option>
+                                                    <option value=3>Apr</option>
+                                                    <option value=4>May</option>
+                                                    <option value=5>Jun</option>
+                                                    <option value=6>Jul</option>
+                                                    <option value=7>Aug</option>
+                                                    <option value=8>Sep</option>
+                                                    <option value=9>Oct</option>
+                                                    <option value=10>Nov</option>
+                                                    <option value=11>Dec</option>
+                                                </select>
+
+
+                                                <label for="year"></label><select class="form-control col-4 dateForm"
+                                                    name="year" id="year" onchange="jump()">
+                                                    <option value=1990>1990</option>
+                                                    <option value=1991>1991</option>
+                                                    <option value=1992>1992</option>
+                                                    <option value=1993>1993</option>
+                                                    <option value=1994>1994</option>
+                                                    <option value=1995>1995</option>
+                                                    <option value=1996>1996</option>
+                                                    <option value=1997>1997</option>
+                                                    <option value=1998>1998</option>
+                                                    <option value=1999>1999</option>
+                                                    <option value=2000>2000</option>
+                                                    <option value=2001>2001</option>
+                                                    <option value=2002>2002</option>
+                                                    <option value=2003>2003</option>
+                                                    <option value=2004>2004</option>
+                                                    <option value=2005>2005</option>
+                                                    <option value=2006>2006</option>
+                                                    <option value=2007>2007</option>
+                                                    <option value=2008>2008</option>
+                                                    <option value=2009>2009</option>
+                                                    <option value=2010>2010</option>
+                                                    <option value=2011>2011</option>
+                                                    <option value=2012>2012</option>
+                                                    <option value=2013>2013</option>
+                                                    <option value=2014>2014</option>
+                                                    <option value=2015>2015</option>
+                                                    <option value=2016>2016</option>
+                                                    <option value=2017>2017</option>
+                                                    <option value=2018>2018</option>
+                                                    <option value=2019>2019</option>
+                                                    <option value=2020>2020</option>
+                                                    <option value=2021>2021</option>
+                                                    <option value=2022>2022</option>
+                                                    <option value=2023>2023</option>
+                                                    <option value=2024>2024</option>
+                                                    <option value=2025>2025</option>
+                                                    <option value=2026>2026</option>
+                                                    <option value=2027>2027</option>
+                                                    <option value=2028>2028</option>
+                                                    <option value=2029>2029</option>
+                                                    <option value=2030>2030</option>
+                                                </select></form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-lg-5">
+                            <p class="my-2 font-weight-bold">Sample pickup time</p>
+                            <p class="my-2 d-lg-none">
+                                <i class="far fa-clock"></i>
+                                <span>Morning,08:00 am</span>
+                                <a href="" class="ml-2">Change</a>
+                            </p>
+                            <div class="d-none d-lg-block">
+                                <ul class="nav nav-pills mb-3 ml-4" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active time" id="pills-home-tab" data-toggle="pill"
+                                            href="#pills-home" role="tab" aria-controls="pills-home"
+                                            aria-selected="true">Morning</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link time" id="pills-profile-tab" data-toggle="pill"
+                                            href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                            aria-selected="false">Noon</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link time" id="pills-contact-tab" data-toggle="pill"
+                                            href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                            aria-selected="false">Evening</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab">
+                                        <div class="todcls">
+                                            <div class="btnclass">
+                                                <button class="my-1 mx-1 border border-success">08:00 am</button>
+                                                <button class="my-1 mx-1 border border-danger"
+                                                    id="unavailableslot">08:00 am</button>
+                                                <button class="my-1 mx-1 border border-success">08:00 am</button>
+                                                <button class="my-1 mx-1 border border-success">08:00 am</button>
+                                                <button class="my-1 mx-1 border border-success">08:00 am</button>
+                                                <button class="my-1 mx-1 border border-success">08:00 am</button>
+                                                <button class="my-1 mx-1 border border-success">08:00 am</button>
+                                                <button class="my-1 mx-1 border border-success">08:00 am</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab">
+                                        <div class="todcls">
+                                            <div class="btnclass">
+                                                <button class="my-1 mx-1 border border-success">12:00 pm</button>
+                                                <button class="my-1 mx-1 border border-danger"
+                                                    id="unavailableslot">12:00 pm</button>
+                                                <button class="my-1 mx-1 border border-success">12:00 pm</button>
+                                                <button class="my-1 mx-1 border border-success">12:00 pm</button>
+                                                <button class="my-1 mx-1 border border-success">12:00 pm</button>
+                                                <button class="my-1 mx-1 border border-success">12:00 pm</button>
+                                                <button class="my-1 mx-1 border border-success">12:00 pm</button>
+                                                <button class="my-1 mx-1 border border-success">12:00 pm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                        aria-labelledby="pills-contact-tab">
+                                        <div class="todcls">
+                                            <div class="btnclass">
+                                                <button class="my-1 mx-1 border border-success">04:00 pm</button>
+                                                <button class="my-1 mx-1 border border-danger"
+                                                    id="unavailableslot">04:00 pm</button>
+                                                <button class="my-1 mx-1 border border-success">04:00 pm</button>
+                                                <button class="my-1 mx-1 border border-success">04:00 pm</button>
+                                                <button class="my-1 mx-1 border border-success">04:00 pm</button>
+                                                <button class="my-1 mx-1 border border-success">04:00 pm</button>
+                                                <button class="my-1 mx-1 border border-success">04:00 pm</button>
+                                                <button class="my-1 mx-1 border border-success">04:00 pm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-lg-flex justify-content-between d-none mt-3">
+                                <h6><i class="fas fa-circle text-success"></i> Slot available</h6>
+                                <h6><i class="fas fa-circle text-danger"></i> Slot booked</h6>
+                            </div>
+
+                        </div>
+                        <div class="d-lg-none">
+                            <div class="col-12 pb-3" id="bg">
+                                <small>Patient details</small>
+                                <div class="d-flex my-3 justify-content-between">
+                                    <div>
+                                        <small class="text-secondary">Name</small>
+                                        <p>Agnideep Sengupta</p>
+                                    </div>
+                                    <div>
+                                        <small class="text-secondary">Gender</small>
+                                        <p>Male</p>
+                                    </div>
+                                    <div>
+                                        <small class="text-secondary">Age</small>
+                                        <p>22</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <small>4 test selected</small>
+                                        <div>Thyroid profile</div>
+                                    </div>
+                                    <small><i class="fas fa-rupee-sign"></i>500</small>
+                                </div>
+                                <div class="my-3 d-flex justify-content-between">
+                                    <div>PPBS</div>
+                                    <small><i class="fas fa-rupee-sign"></i>100</small>
+                                </div>
+                                <div class="my-3 d-flex justify-content-between">
+                                    <div>Hb1Ac</div>
+                                    <small><i class="fas fa-rupee-sign"></i>400</small>
+                                </div>
+                                <div class="d-flex my-3 justify-content-between">
+                                    <div>
+                                        <small>Lab</small>
+                                        <p>Thyrocare</p>
+                                    </div>
+                                    <div>
+                                        <small>Preparation</small>
+                                        <p>Fasting required</p>
+                                    </div>
+                                    <div>
+                                        <small>Sample</small>
+                                        <p>Blood</p>
+                                    </div>
+
+                                </div>
+                                <table>
+                                    <tr>
+                                        <td class="px-3"><button type="button" class="btn btn-outline-primary btn-sm"
+                                                data-toggle="modal" data-target="#exampleModal">Change
+                                                Patient</button>
+                                        </td>
+                                        <td class="px-3"><button type="button" class="btn btn-outline-primary btn-sm"
+                                                data-toggle="modal" data-target="#exampleModal1">Add
+                                                Patient</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-12 my-2">
+                                <div class="d-flex justify-content-between my-1">
+                                    <small>Test Price</small>
+                                    <small><i class="fas fa-rupee-sign"></i>500</small>
+                                </div>
+                                <div class="d-flex justify-content-between my-1">
+                                    <small>Delivery Charge</small>
+                                    <small><i class="fas fa-rupee-sign"></i>500</small>
+                                </div>
+                                <div class="d-flex justify-content-between my-1">
+                                    <small>Membership discount</small>
+                                    <small><i class="fas fa-rupee-sign"></i>00</small>
+                                </div>
+                                <small class="text-warning mt-1">
+                                    Not a member ? Get prime
+                                </small>
+                                <div class="d-flex justify-content-between my-4">
+                                    <div>Grand Total</div>
+                                    <div><i class="fas fa-rupee-sign"></i>1000</div>
+                                </div>
+                                <hr>
+                                <small class="text-danger mt-1 mb-4">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, blanditiis?
+                                </small>
+                            </div>
+                            <div
+                                class="col-12 box d-flex justify-content-between mb-2 px-2 py-3 paymentBox align-items-center">
+                                <div>
+                                    <div>
+                                        Payment method
+                                        <i class="fas fa-angle-right ml-2"></i>
+                                    </div>
+                                    <div><small>Choose option</small></div>
+                                </div>
+                                <div class="btn btn-warning d-flex align-items-center custom">
+                                    <div class="small">
+                                        <div>Total</div>
+                                        <div>
+                                            <i class="fas fa-rupee-sign"></i>1000
+                                        </div>
+                                    </div>
+                                    <div class="ml-3">
+                                        <h5>
+                                            Proceed
+                                            <i class="fas fa-chevron-circle-right"></i>
+                                        </h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-4 py-3 px-3 mb-3 d-none d-lg-block">
+                <div class="col-12 box px-3 py-3">
+                    <h5>Laboratory</h5>
+                    <small>Laboratory name</small>
+                    <h5 class="mt-2">Sample Collection</h5>
+                    <table>
+                        <tr>
+                            <td class="text-secondary pr-3">Date</td>
+                            <td class="text-secondary pr-3">Time</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-3">April 03,2020</td>
+                            <td class="pr-3">08:00am</td>
+                        </tr>
+                    </table>
+                    <h5 class="mt-2">Billing info</h5>
+                    <div class="d-flex my-1 justify-content-between">
+                        <span>Test 1 Price</span>
+                        <span>350.00</span>
+                    </div>
+                    <div class="d-flex my-1 justify-content-between">
+                        <span>Test 1 Price</span>
+                        <span>350.00</span>
+                    </div>
+                    <div class="d-flex my-1 justify-content-between">
+                        <span>Test 1 Price</span>
+                        <span>350.00</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex my-1 justify-content-between">
+                        <span>Test 1 Price</span>
+                        <span>350.00</span>
+                    </div>
+                    <div class="d-flex my-1 justify-content-between">
+                        <span>Test 1 Price</span>
+                        <span>350.00</span>
+                    </div>
+                    <div class="d-flex my-1 justify-content-between">
+                        <span>Test 1 Price</span>
+                        <span>350.00</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex my-1 justify-content-between">
+                        <span>Test 1 Price</span>
+                        <span>350.00</span>
+                    </div>
+                </div>
+                <button class="btn btn-warning mt-3 w-100">Next</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script>
+        let today = new Date();
+        let currentMonth = today.getMonth();
+        let currentYear = today.getFullYear();
+        let selectYear = document.getElementById("year");
+        let selectMonth = document.getElementById("month");
+
+        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+        let monthAndYear = document.getElementById("monthAndYear");
+        showCalendar(currentMonth, currentYear);
+
+
+        function next() {
+            currentYear = (currentMonth === 11) ? currentYear + 1 : currentYear;
+            currentMonth = (currentMonth + 1) % 12;
+            showCalendar(currentMonth, currentYear);
+        }
+
+        function previous() {
+            currentYear = (currentMonth === 0) ? currentYear - 1 : currentYear;
+            currentMonth = (currentMonth === 0) ? 11 : currentMonth - 1;
+            showCalendar(currentMonth, currentYear);
+        }
+
+        function jump() {
+            currentYear = parseInt(selectYear.value);
+            currentMonth = parseInt(selectMonth.value);
+            showCalendar(currentMonth, currentYear);
+        }
+
+        function showCalendar(month, year) {
+
+            let firstDay = (new Date(year, month)).getDay();
+            let daysInMonth = 32 - new Date(year, month, 32).getDate();
+
+            let tbl = document.getElementById("calendar-body"); // body of the calendar
+
+            // clearing all previous cells
+            tbl.innerHTML = "";
+
+            // filing data about month and in the page via DOM.
+            monthAndYear.innerHTML = months[month] + " " + year;
+            selectYear.value = year;
+            selectMonth.value = month;
+
+            // creating all cells
+            let date = 1;
+            for (let i = 0; i < 6; i++) {
+                // creates a table row
+                let row = document.createElement("tr");
+
+                //creating individual cells, filing them up with data.
+                for (let j = 0; j < 7; j++) {
+                    if (i === 0 && j < firstDay) {
+                        let cell = document.createElement("td");
+                        let cellText = document.createTextNode("");
+                        cell.appendChild(cellText);
+                        row.appendChild(cell);
+                    } else if (date > daysInMonth) {
+                        break;
+                    } else {
+                        let cell = document.createElement("td");
+                        let cellText = document.createTextNode(date);
+                        if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
+                            cell.classList.add("bg-info");
+                        } // color today's date
+                        cell.appendChild(cellText);
+                        row.appendChild(cell);
+                        date++;
+                    }
+
+
+                }
+
+                tbl.appendChild(row); // appending each row into calendar body.
+            }
+
+        }
+    </script>
+</body>
+
+</html>
