@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <title>SignIn</title>
+  <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+  <style>
+    .cont-style {
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+      font-family: 'Nunito Sans';
+    }
+
+    .heading {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 33px;
+    }
+
+    .sub-text {
+      font-size: 18px;
+    }
+
+    .card-style {
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .card-title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .digit-group input {
+
+      width: 30px;
+      height: 35px;
+      border: none;
+      border-bottom: 1px solid #808080;
+      line-height: 50px;
+      text-align: center;
+      font-size: 24px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
+      color: black;
+      margin: 0 2px;
+
+    }
+
+    .digit-group .splitter {
+      padding: 0 5px;
+      color: #808080;
+      font-size: 24px;
+    }
+
+    .small-text {
+      font-size: 11.5px;
+    }
+
+    .button-style {
+      background-color: #FF8900;
+      font-size: 14px;
+    }
+
+    .icon {
+      background-color: red;
+      color: #FFF;
+      border-radius: 50%;
+      border: none;
+      padding-left: 4px;
+      padding-right: 24px;
+      padding-top: 3px;
+      padding-bottom: 4px;
+    }
+
+    .icon-2 {
+      background-color: rgb(231, 230, 230);
+      color: rgba(0, 0, 0, 0.54);
+      border-radius: 50%;
+      border: none;
+      padding-left: 2px;
+      padding-right: 22px;
+      padding-top: 2px;
+      padding-bottom: 3px;
+
+
+    }
+
+    .button-shadow {
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 100px;
+    }
+
+    .button-style2 {
+      background-color: #141b41;
+      color: white;
+      padding-left: 130px;
+      padding-right: 130px;
+    }
+
+    .button-style2:hover {
+      color: white;
+    }
+
+    .line-style {
+      width: 60%;
+      height: 10px;
+      border-bottom: 1px solid black;
+      text-align: center;
+    }
+
+    .line-style-sub {
+      font-size: 14px;
+      background-color: white;
+      padding: 0 15px;
+    }
+
+    .skip {
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .new-to {
+        margin-left: 100px;
+      }
+    }
+
+    @media only screen and (max-width: 992px) {
+      .new-to {
+        margin-left: 130px;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .new-to {
+        margin-left: 110px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container cont-style mt-sm-5 mb-5">
+    <div class="row mx-4">
+      <div class="col-9 mt-5  heading">
+        Welcome to Biolege
+      </div>
+      <div class="col-1 mt-sm-5 text-right ml-auto">
+        <button type="button" class="btn btn-light"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+            height="1em" width="1em" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+            <path fill="currentColor"
+              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+            </path>
+          </svg>
+      </div>
+      <div class="col-12 text-muted sub-text">
+        Your health assistant
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 mx-lg-5 mt-5">
+        <!----------------------------------------------------card starts------------------------------------------------------->
+        <div class="row">
+          <div class="col-12">
+            <div class="card mx-sm-5 card-style border-light">
+              <div class="card-body">
+                <div class="card-title">Create my account</div>
+                <h5>OTP Verification</h5>
+                <!----------the input box------------->
+                <div class="row">
+                  <div class="col-sm-12 ml-n1 mt-2 text-center text-muted small-text mb-2">
+                    OTP has been sent on your mobile. Please enter Below
+                  </div>
+                  <div class="col-sm-12 ml-n1 text-center text-muted small-text mb-1">
+                    <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false"
+                      autocomplete="off">
+                      <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+                      <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                      <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                      <span class="splitter">&ndash;</span>
+                      <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+                      <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+                      <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
+                    </form>
+                  </div>
+                </div>
+                <!------------------------>
+                <div class="row mt-4">
+                  <div class="col-sm-12 ml-n1 text-center text-muted small-text mb-1">
+                    Didnt Receive OTP? <a href="">Resend</a>
+                  </div>
+                  <div class="col-sm-12 text-center mb-1">
+                    <button type="button" class="btn btn-sm px-4 button-style mt-4">Verify</button>
+                  </div>
+                  <!---signin button-->
+                  <div class="col-sm-12 text-center mt-4 mb-4">
+                    <button type="button" class="btn btn-sm px-5 text-center button-shadow">
+                      <div class="row">
+                        <div class="col-1">
+                          <div class="icon text-center"><svg aria-hidden="true" focusable="false" height="1.5em"
+                              width="1.5em" data-prefix="fab" data-icon="google"
+                              class="svg-inline--fa fa-google fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 488 512">
+                              <path fill="currentColor"
+                                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
+                              </path>
+                            </svg></div>
+                        </div>
+                        <div class="col-10 mt-1">
+                          Sign in with google
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                  <!------->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!------------------------------------------------------card ends-------------------------------------------------------->
+          <div class="col-12 mt-3 text-center new-to mb-2">
+            <div class="line-style">
+              <span class="line-style-sub">
+                New to Biolege
+                <!--Padding is optional-->
+              </span>
+            </div>
+          </div>
+          <div class="col-12 mx-sm-5 text-center ml-sm-n1">
+            <button type="button" class="btn btn-sm button-style2 mt-4">Create new Biolege Account</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-5 ml-sm-n5 mt-4 d-none d-lg-block">
+        <img src="Work time-pana.svg" alt="">
+      </div>
+      <div class="col-auto ml-auto mr-3 my-3">
+        <button type="button " class="btn btn-sm">
+          <div class="row">
+            <div class="col-3 offset-2 skip">
+              Skip
+            </div>
+            <div class="col-1 offset-1 mt-0">
+              <div class="icon-2 text-center"><svg class="bi bi-arrow-right-short" width="1.5em" height="1.5em"
+                  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M8.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.793 8 8.146 5.354a.5.5 0 010-.708z"
+                    clip-rule="evenodd" />
+                  <path fill-rule="evenodd" d="M4 8a.5.5 0 01.5-.5H11a.5.5 0 010 1H4.5A.5.5 0 014 8z"
+                    clip-rule="evenodd" />
+                </svg></div>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript">
+    $('.digit-group').find('input').each(function () {
+      $(this).attr('maxlength', 1);
+      $(this).on('keyup', function (e) {
+        var parent = $($(this).parent());
+
+        if (e.keyCode === 8 || e.keyCode === 37) {
+          var prev = parent.find('input#' + $(this).data('previous'));
+
+          if (prev.length) {
+            $(prev).select();
+          }
+        } else if ((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+          var next = parent.find('input#' + $(this).data('next'));
+
+          if (next.length) {
+            $(next).select();
+          } else {
+            if (parent.data('autosubmit')) {
+              parent.submit();
+            }
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
