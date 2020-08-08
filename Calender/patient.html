@@ -67,11 +67,16 @@
             }
         }
 
+        .paymentBox {
+            font-size: 13px;
+        }
+
         @media only screen and (max-width: 375px) {
             .paymentBox {
-                font-size: 13px;
+                font-size: 10px;
             }
         }
+
 
         #bg {
             background: #F7F7F7;
@@ -382,25 +387,25 @@
                             </div>
                             <div
                                 class="col-12 box d-flex justify-content-between mb-2 px-2 py-3 paymentBox align-items-center">
-                                <div>
-                                    <div>
-                                        Payment method
-                                        <i class="fas fa-angle-right ml-2"></i>
-                                    </div>
-                                    <div><small>Choose option</small></div>
-                                </div>
-                                <div class="btn btn-warning d-flex align-items-center custom">
+
+                                <small>
+                                    Payment method
+                                    <i class="fas fa-angle-right ml-2"></i>
+                                </small>
+                                <div><small>Choose option</small></div>
+
+                                <div class="btn btn-warning d-flex align-items-center custom paymentBox">
                                     <div class="small">
-                                        <div>Total</div>
-                                        <div>
-                                            <i class="fas fa-rupee-sign"></i>1000
-                                        </div>
+                                        <span>Total</span>
+                                        <span>
+                                            <i class="fas fa-rupee-sign ml-1"></i>1000
+                                        </span>
                                     </div>
                                     <div class="ml-3">
-                                        <h5>
+                                        <small>
                                             Proceed
                                             <i class="fas fa-chevron-circle-right"></i>
-                                        </h5>
+                                        </small>
                                     </div>
                                 </div>
 
