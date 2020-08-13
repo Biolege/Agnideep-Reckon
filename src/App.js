@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Footer from "./Components/footer/footer";
+import Whatsapp from "./Components/whatsapp/whatsapp";
+import Download from "./Components/download/download";
+import Membership from "./Components/membership/membership";
+import Selecttest from "./Components/selectTest/selectTest";
+import Packages from "./Components/packages/packages";
+import Profile from "./Components/profiles/profile";
+import Tests from "./Components/tests/tests";
+import Book from "./Components/book/book";
+import Carousel from "./Components/carousel/carousel";
+import Frequent from "./Components/frequent/frequent";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Carousel />
+      <div className="px-2">
+        <Frequent />
+        <Book />
+        <Tests />
+        <Profile />
+        <Packages />
+        <Selecttest />
+        <Membership />
+        <Whatsapp />
+        <Download />
+      </div>
+
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
