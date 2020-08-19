@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .head-links {
+      background-color: #141B41;
+    }
+
+    .darkbg {
+      color: white;
+      font-size: 14px;
+    }
+
+    .darkbg:hover {
+      color: white;
+      text-decoration: none;
+    }
+
+    .report-delivery-pend {
+      margin-left: 190px;
+    }
+
+    .reports {
+      font-size: 24px;
+    }
+
+
+    .input-group-text {
+      background-color: #fff;
+    }
+
+    .delivered {
+      color: #14DA00;
+    }
+
+    .pending {
+      color: #DA0000;
+    }
+
+    .circle1 {
+      background-color: #EAEAEA;
+      width: 45px;
+      height: 45px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .report-delivery-pend {
+        margin-left: 110px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1100px) {
+      .report-delivery-pend {
+        margin-left: 13.5%;
+      }
+    }
+
+    .b1 {
+      border-radius: 1000px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid head-links mt-sm-4">
+    <div class="row">
+      <div class="col py-sm-2 report-delivery-pend"><a class="darkbg" href=#>Report delivery pending</a></div>
+
+    </div>
+  </div>
+
+  <!---------------------------------------------------------------------------->
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-4 reports text-center text-sm-left d-flex justify-content-between">
+        <div>Reports</div>
+        <div class="d-md-none">April 24,2020 <i class="far fa-calendar-alt"></i></div>
+      </div>
+      <div class="col-12 col-sm-4 col-md-3 ml-auto mt-4 mt-sm-0 d-none d-md-block">
+        <div class="input-group md-form form-sm form-2">
+          <input class="form-control my-0 border b1" type="text" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <span class="input-group-text lighten-3 border b1" id="basic-text1"><i class="fa fa-search text-grey"
+                aria-hidden="true"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100"></div>
+      <div class="col-sm-5 mt-4 d-none d-md-block">
+        Today, 25-01-2020
+      </div>
+    </div>
+    <div class="row mt-4 d-none d-md-block">
+      <div class="col-12">
+        <table class="table text-center table-responsive-md">
+          <tbody>
+            <tr class="shadow">
+              <th scope="row"></th>
+              <td class="py-4">Name</td>
+              <td class="py-4">Test orders</td>
+              <td class="py-4">Laboratory</td>
+              <td class="py-4">Report from Lab</td>
+              <td class="py-4">Report uploaded</td>
+              <td class="py-4">Report delivered</td>
+            </tr>
+            <tr>
+              <th class="py-4 mx-auto">
+                <div class="rounded-circle circle1"></div>
+              </th>
+              <td class="py-4">Babur Ahmed</td>
+              <td class="py-4">TSH,PPBS</td>
+              <td class="py-4">Thyrocare</td>
+              <td class="delivered py-4">Delivered</td>
+              <td class="delivered py-4">Uploaded</td>
+              <td class="pending py-4">Pending</td>
+            </tr>
+            <tr>
+              <th class="py-4 mx-auto">
+                <div class="rounded-circle circle1"></div>
+              </th>
+              <td class="py-4">Babur Ahmed</td>
+              <td class="py-4">Uric Acid</td>
+              <td class="py-4">HAMM</td>
+              <td class="pending py-4">not delivered</td>
+              <td class="pending py-4">Pending</td>
+              <td class="pending py-4">Pending</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row mt-5 ml-1 d-none d-md-block">
+      Yesterday, 24-01-2020
+    </div>
+    <div class="row mt-4 pb-5 d-none d-md-block">
+      <div class="col-12">
+        <table class="table text-center table-responsive-md">
+          <tbody>
+            <tr class="shadow">
+              <th scope="row"></th>
+              <td class="py-4">Name</td>
+              <td class="py-4">Test orders</td>
+              <td class="py-4">Laboratory</td>
+              <td class="py-4">Report from Lab</td>
+              <td class="py-4">Report uploaded</td>
+              <td class="py-4">Report delivered</td>
+            </tr>
+            <tr class="py-4">
+              <th class="py-4 mx-auto">
+                <div class="rounded-circle circle1"></div>
+              </th>
+              <td class="py-4">Babur Ahmed</td>
+              <td class="py-4">TSH,PPBS</td>
+              <td class="py-4">Thyrocare</td>
+              <td class="delivered py-4">Delivered</td>
+              <td class="delivered py-4">Uploaded</td>
+              <td class="pending py-4">Pending</td>
+            </tr>
+            <tr>
+              <th class="py-4 mx-auto">
+                <div class="rounded-circle circle1"></div>
+              </th>
+              <td class="py-4">Babur Ahmed</td>
+              <td class="py-4">Uric Acid</td>
+              <td class="py-4">HAMM</td>
+              <td class="pending py-4">not delivered</td>
+              <td class="pending py-4">Pending</td>
+              <td class="pending py-4">Pending</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row px-2 py-2 d-md-none">
+      <div class="col-12 border px-2 py-2 my-2">
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <div class="rounded-circle circle1 mr-3"></div>
+            <div class="d-flex flex-column">
+              <h6>Babur Ahmed</h6>
+              <small>Age 56</small>
+              <small>Female</small>
+              <h6 class="mt-4">THS, PPBS</h6>
+            </div>
+          </div>
+          <div class="d-flex flex-column justify-content-between">
+            <small class="text-secondary">Thyrocare</small>
+            <small class="text-danger">Pending</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 border px-2 py-2 my-2">
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <div class="rounded-circle circle1 mr-3"></div>
+            <div class="d-flex flex-column">
+              <h6>Babur Ahmed</h6>
+              <small>Age 56</small>
+              <small>Female</small>
+              <h6 class="mt-4">THS, PPBS</h6>
+            </div>
+          </div>
+          <div class="d-flex flex-column justify-content-between">
+            <small class="text-secondary">Thyrocare</small>
+            <small class="text-danger">Pending</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
