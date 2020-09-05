@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav {
+  background-color: orange;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav a {
+  text-decoration: none;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a:hover {
+  color: black;
+}
+
+.navbar-toggler {
+  border: 1px solid rgb(230, 128, 12);
+}
+
+.navbar-toggler-icon {
+  width: 100%;
+  color: rgb(253, 72, 0);
+}
+
+.lb {
+  border-left: 1px solid white;
+}
+
+.fa-user-md {
+  color: rgb(233, 43, 10);
+  background-color: white;
+  border-radius: 20px;
+  font-size: 3rem;
+}
+
+.fa-dna {
+  font-size: 2rem;
+}
+
+.icn {
+  font-size: 30px;
+  border-radius: 200px;
+  padding: 20px;
+  color: white;
+  background-color: black;
+}
+
+.icn:hover {
+  background-color: orange;
+  border: none;
+}
+
+.icon-set {
+  width: 50%;
+}
+.icons {
+  color: #141b41;
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+}
+.icons:hover {
+  color: #ff8900;
+}
+.icons1 {
+  background-color: #fff;
+  color: #ff8900;
+  border: none;
+  padding: 5px;
+}
+.icons-text {
+  font-size: 14px;
+  color: #141b41;
+  margin-top: 5px;
+  font-weight: 500;
+}
+.icons-text:hover {
+  color: #ff8900;
+}
+.icons-text1 {
+  font-size: 14px;
+  color: #ff8900;
+  margin-top: 5px;
+  font-weight: 500;
+}
+.shad {
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+}
+.bordrup {
+  border-radius: 10px;
+}
+body {
+  transform: scale(0.89, 0.89);
 }
