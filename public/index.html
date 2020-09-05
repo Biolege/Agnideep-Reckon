@@ -10,6 +10,43 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI="
+      crossorigin="anonymous"
+    />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -39,5 +76,70 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".slider").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 8,
+        slidesToScroll: 8,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+        ],
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".t").click(function () {
+          if ($(".t").children("i").hasClass("fa-chevron-circle-down")) {
+            $(".collapsible").toggle();
+            $(".t").children("i").removeClass("fa-chevron-circle-down");
+            $(".t").children("i").addClass("fas fa-chevron-circle-up");
+          } else if ($(".t").children("i").hasClass("fa-chevron-circle-up")) {
+            $(".collapsible").toggle();
+            $(".t").children("i").removeClass("fa-chevron-circle-up");
+            $(".t").children("i").addClass("fas fa-chevron-circle-down");
+          }
+        });
+        $(".w").click(function () {
+          if ($(".w").children("i").hasClass("fa-chevron-circle-down")) {
+            $(".collapsible2").toggle();
+            $(".w").children("i").removeClass("fa-chevron-circle-down");
+            $(".w").children("i").addClass("fas fa-chevron-circle-up");
+          } else if ($(".w").children("i").hasClass("fa-chevron-circle-up")) {
+            $(".collapsible2").toggle();
+            $(".w").children("i").removeClass("fa-chevron-circle-up");
+            $(".w").children("i").addClass("fas fa-chevron-circle-down");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
