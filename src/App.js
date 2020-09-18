@@ -13,11 +13,11 @@ function App() {
     <div className="App container-fluid">
       <Search />
       <Carousel />
-      <Teleapp />
+      {/* <Teleapp />
       <Chat />
       <Appointment />
       <Android />
-      <Security />
+      <Security /> */}
     </div>
   );
 }

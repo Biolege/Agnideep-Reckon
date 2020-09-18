@@ -2,6 +2,14 @@
   background: #141b41;
   color: white;
 }
+.place {
+  color: #ff8900;
+  font-size: 36px;
+}
+.date {
+  color: #ff8900;
+  font-size: 24px;
+}
 .app {
   background: #ff8900;
   color: white;
@@ -25,12 +33,11 @@ li {
 }
 .img-class {
   color: white;
-  background: url("./Assets/wallorange\ 2.svg");
 }
 .crcle {
   width: 149px;
   height: 151px;
-  background: white;
+  background: blue;
 }
 @media only screen and (max-width: 768px) {
   .crcle {
@@ -38,14 +45,17 @@ li {
     height: 36px;
   }
 }
+.book {
+  color: #0076ff;
+}
 .search {
-  background: url("./Assets/wait\ 1.svg");
-  height: 656px;
+  height: 300px;
   color: white;
 }
+
 .search-bar {
   background: white;
-  filter: drop-shadow(0px 6px 40px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.1));
 }
 .search-inp {
   border: none;
@@ -54,5 +64,5 @@ li {
   outline: none;
 }
 .fa-search {
-  color: #141b41;
+  color: #0076ff;
 }
